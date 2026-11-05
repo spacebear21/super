@@ -29,3 +29,4 @@
 - 2026-11-05 18:40 wX:p1 (claude, superwatch-fix): add kimi-k3.1-pro to the harness provisioning copy of the opencode config, branch tff-kimi-pro, push to hub main
 - 2026-11-05 18:59 wS wS:p2Y (claude fable, synthesis): compare the fundamentals design against the discovery reports, settle the P2WSH disguise question step by step, report to ~/review-drafts/untrusted-inputs/synthesis.md
 - 2026-11-05 19:01 wS:pP (claude, phase2): told that the PR head already carries the six commit version; wait for Bull's answer on Dart source mode
+- 2026-11-05 19:13 wS synthesis: added the Bull Bitcoin exchange payjoin fact (Bull is a production sender at scale and the receiver that must not break)
