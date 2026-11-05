@@ -37,3 +37,4 @@
 - 2026-11-05 20:21 wT:p1 (claude): fix check --fix fingerprint collisions when merging projects that were both audited (branch merge-fix)
 - 2026-11-05 20:55 wT:p1 (claude): triage pass over the 249 payjoin-audit drafts, reading list of 20 with Bull Bitcoin first, false positives, dissent rescues, duplicates; branch triage
 - 2026-11-05 20:57 wS synthesis: append an addendum on the late CoinJoin and proof of ownership reports
+- 2026-11-05 21:16 wT:p1: stop spawning Claude subagents for the triage; use findings.json and opencode headless calls instead
