@@ -32,3 +32,10 @@ The OpenCode Zen free tier entries (opencode:opencode/...) were dropped from con
 - The entry point is bin/run.sh and `bin/audit run` (renamed from nightly in 9a3dafb, d3ef3e3). Crontab: `17 02 * * * /home/agent/repos/payjoin-audit/bin/run.sh >>~/.cache/payjoin-audit/cron.log 2>&1`.
 - The first cron run (2026-11-05 02:17 UTC) failed every model call because cron's PATH lacks ~/.local/bin, so no backend was found; 79 tasks had no usable answer, every model got disabled, and an empty run was committed as 73d8902 and reverted in 5f7f4fe. Fixes: the wrapper exports the user bin directories (5ce18b8) and the CLI refuses to start without a backend on PATH (dd270ad).
 - Next scheduled run: 2026-11-06 02:17 UTC. Check ~/.cache/payjoin-audit/cron.log after it; a healthy run shows nonzero answer counts per model and a commit on master.
+
+## Throughput (learned 2026-11-05 during the first full run)
+
+- No per task rate limit in the pipeline. config.json concurrency: total 8 calls in flight, 2 per model. Timeouts: default 1500 s, audit and explore 2700 s, minority 900 s; idle limit 600 s (backends.IDLE_LIMIT). A 429 or quota error counts as a failure; four in a row disables the model for the run.
+- Discovery is six agentic search tasks, all launched at once, so its wall clock is the slowest single call plus timeout-then-retry chains. In the first full run three of six first attempts (kimi-k3 twice, glm-5.3-uncensored once) ran the full 1500 s and were retried from scratch. Successful calls took 8 to 23 min and millions of tokens, nearly all cache reads.
+- The github-code discovery task is bounded by GitHub code search quota: 10 requests per minute per token. Core quota (5000/h) is not a concern.
+- The box (4 cores, 19 GB) sits near idle during a run; raising total to 16 and per_model to 3 or 4 for the audit stage is cheap in machine terms, the risk is Token Factory 429s disabling models.
