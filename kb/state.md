@@ -1,6 +1,6 @@
 # State
 
-Last rewritten: 2026-11-05 (after the triage hand-off)
+Last rewritten: 2026-11-05 (after the human posted PR 2023 and PR 1971)
 
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
@@ -10,8 +10,8 @@ Last rewritten: 2026-11-05 (after the triage hand-off)
 - Triage done (wT:p1, name triage, idle): branch triage in ~/repos/payjoin-audit-triage, one commit adding reports/triage/2026-11-05.md with a reading list of 19 (Bull first), 9 false positives, 20 inflated groups, 2 dissent cases, duplicates, 153 parked. No finding, draft or registry changed. Waiting on the human to read it and say which findings get written up and sent; the worker can be released or reused for that. Next run should scan Bull Bitcoin's own three repositories, which have never been scanned.
 ## rust-payjoin
 
-- Native FFI builds PR 2023: Bull Bitcoin's Dart maintainer answered on 2026-11-05 that they need a build from source mode for a future F-Droid listing, so the Dart package keeps both modes, which is what the worker's branch native-build-6 already does. Waiting on the human: force push native-build-6 to spacebear21:native-build (the PR head) and replace the PR description with ~/repos/native-build-6-PR-2023.md. The phase2 worker (wS:pP) has nothing left to do and can be released once the push is done.
-- Receiver settlement PR 1971 review: the reviewer re-checked the author's latest push (all suites, clippy and fmt pass) and found every blocking item addressed. Waiting on the human to post two drafts from ~/review-drafts/payjoin-1971/: the reply to the Resolution thread (draft-reply-stale-flow.md) and the ACK with the four non-blocking follow-ups folded in (draft-ack-followups.md). Review worktree ~/repos/rust-payjoin-review-1971 stays until the human is done; the reviewer is otherwise finished.
+- Native FFI builds PR 2023: done on this box. The human force pushed native-build-6 (both Dart build modes, prebuilt default and source for Bull's F-Droid plan) to the PR head and replaced the description on 2026-11-05. Waiting on upstream review. The phase2 worker (wS:pP, idle) has nothing pending and can be released.
+- Receiver settlement PR 1971 review: ACKed. The human posted the stale-flow reply and the ACK with four non-blocking follow-ups on 2026-11-05. Waiting on the maintainer to merge or on the author to answer the follow-ups; the reviewer (wS:pH, idle) and worktree ~/repos/rust-payjoin-review-1971 stay for that.
 - witness_utxo fee fix (wS:pR, idle): two finished commits on a local branch (reject contradicting UTXO data; require the previous transaction on receiver inputs unless the sender's taproot signing covers amounts). The human rejected this shape on 2026-11-05 (breaks honest Bull and Cake receivers; severity does not justify it), moved the private PR to draft; the worker was told to stand down.
 - Rethink complete: synthesis.md, fundamentals.md, eight discovery reports and experiment-taproot-amount.md under ~/review-drafts/untrusted-inputs/ (backups in untrusted-inputs-backup). Conclusions filed in projects/rust-payjoin.md. Waiting on the human's decision on the path (the synthesis's universal fixes plus accepting the bounded residual) and on asking Bull whether their exchange sending wallet signs taproot. The seven rethink agents (fundamentals, synthesis, discovery-a to e in wS tabs tX and tY; discovery-c still running on kimi-k3) and the worktree ~/repos/rust-payjoin-untrusted-inputs stay until the human is done with the reports; then release them.
 - Decision context from the other finished wS workers (fallback_tx review, security audit) is filed in projects/rust-payjoin.md.
