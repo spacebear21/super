@@ -1,36 +1,19 @@
 # harness
 
-Hub repo: ~/repos/harness.git (main). Worktrees ~/repos/harness-<slug>. Holds the workhorse image, the dashboard (infra/workhorse/dashboard/server.py), super-watch, super-sync, agents-refresh, and this super agent's instruction files (SUPER.md, etc/super-settings.json). Progress is recorded in docs/progress.md.
+The workhorse image, its entrypoint, the dashboard, super-watch, super-sync and the seeds of this agent's own instructions. The hub is the bare repo ~/repos/harness.git, worktrees ~/repos/harness-<slug>; docs/runbook.md in the repo explains how everything is wired and why, so nothing of that is repeated here.
 
-## Super agent first run (2026-11-05, branch super-record, worker wV:p1)
+## Decisions taken out of band
 
-Hub main fast-forwarded to 44f287d8b855a304b4ec0985ef4693dde4d5470e (four commits over 6d98af4): show prompts taken mid-turn (queued_command records), strip the pasted_content wrapper, 44 px tap targets, progress record. Served dashboard is on it. Report was at /tmp/handoff/super/out/REPORT.md (tmp, may vanish).
+- **Scheduled tasks live in this repo** (human, 2026-11-05). A committed schedule of every cron task, with the repositories each needs, so the schedule is in history and comes back whole on another machine, and the image pulls those repositories in. The payjoin audit's own install script and image notes were the thing this replaces: a crontab installed by hand is lost on every rebuild and nothing in the harness knew the task existed.
+- **A deleted inbox note is a handled note** (human, 2026-11-05). super-watch drops queued note events whose file is gone before it prompts. The alternative, waiting until a note's modification time has been stable before announcing it, was rejected: the human is "not a fan of the delay". A rewritten note that still exists keeps counting as new.
+- **Wake the super agent only for notes and dialogs, never for a worker finishing a turn**, because every wake-up costs a turn of context and most turn ends need nothing; when the super agent wants an answer it waits for it itself. Settled before my memory starts; the runbook carries the reasoning.
+- **The super agent sits alone in its own workspace** and belongs to no project; harness work goes in its own workspace like any project.
+- **A reviewed fix the human asked for may be landed in hub main and swapped into the root filesystem by hand** (done for super-watch) without waiting for an image deploy; the deploy carries it permanently. The root filesystem is wiped on rebuild, so the hub copy is the one that matters.
 
-What runs on the box as stopgaps until the image deploy: ~/super made by hand from the hub's agents-refresh; qmd 2.8.3 under ~/.local; ~/super/kb is a git init with origin https://github.com/spacebear21/super-kb.git (repo does not exist yet, no PAT, so nothing is pushed); super-watch hand-run in pane wV:p2; super-sync not running.
+## Learned
 
-Dashboard API: GET /api/super gives my pane, status and transcript; POST /api/super/say types into my pane (limits: 4000 chars, printable, X-Dashboard header, 409 when no super agent or on a dialog).
-
-## Follow-up (branch super-record at a38407052a3933168aa249332b84809309f4ea82, fast-forwarded into hub main)
-
-Verified with a scratch agent: a dialog wakes the super agent, a watcher restart announces a standing dialog again, a finished turn does not wake it, an inbox note does. The live ~/super/CLAUDE.md is the earlier seed and lags etc/SUPER.md in the hub (Wake-ups and Memory sections) until edited in the ~/super repo.
-
-## Update 02:30
-
-The human made ~/super the git repository (origin spacebear21/super.git) with one initial commit holding the kb files unchanged; the old kb/.git is gone. The new super-watch from main wakes the super agent only on inbox notes and dialogs. Scratch tests in ~/scratch-super-check-3 (a dialog and a note) are to be left alone.
-
-## Steps left for the laptop (human)
-
-1. Deploy the image with infra/scripts/workhorse-deploy.sh. Afterwards stop the hand-run super-watch in pane wV:p2 (ctrl+c), since the entrypoint runs its own.
-2. Create private repo spacebear21/super (the origin of ~/super; the earlier name super-kb is superseded), empty, Actions disabled; mint a fine-grained PAT with Contents read and write on that repo only; set it with workhorse-deploy.sh --set-secrets. The first super-sync pass pushes the commits.
-3. /login in the super session before the login expires (warned on 2026-11-05: one day left).
-4. /rc in the super session if Remote Control is wanted; consider remoteControlAtStartup in ~/super/.claude/settings.json or etc/super-settings.json.
-5. Open the dashboard on the phone; home is the conversation.
-
-## Open note from the worker
-
-A second watcher with SUPER_DIR pointed elsewhere treats the real super pane as a worker, and the two watchers loop through each other's wake-ups. Recorded in docs/progress.md as open.
-
-## super-watch quirk (seen 2026-11-05 16:29)
-
-A rewritten inbox note counts as new (the watcher tracks name plus mtime by design), and a prompt typed into the super pane mid-turn is held by Claude Code until the turn ends. So when a worker writes a note, then touches it up seconds later (wT:p1 did a sed on registry-fixes.md 25 s after writing it), the super agent gets a second wake-up for a note it has already handled and deleted. Fix to make in the harness repo: at prompt time drop queued note events whose file no longer exists in the inbox (and perhaps wait until a note's mtime has been stable for ~10 s before announcing it). The hand-run watcher is pid 462 under a `while :; do super-watch; sleep 10; done` loop (pid 454), no longer in pane wV:p2.
-- 2026-11-05 ~16:50: fixed on branch super-watch-stale (49d3408, db33d53), merged into hub main and installed live: super-watch drops queued note events whose file is gone before every prompt attempt. Known leftover: a note deleted and rewritten before a prompt goes out is named twice in one line. Scheduler task briefed the same hour (branch scheduler, wX:p2): a committed schedule file under infra/workhorse/etc, cron in the image, schedule-refresh at boot and on push to main that renders the crontab block and clones task repos; the payjoin audit is the first entry; once merged, payjoin-audit's bin/install-cron.sh and image/ are to be removed.
+- Claude Code holds text typed into a pane mid-turn until the turn ends, so a watcher prompt can arrive after the thing it announces is gone. Any mechanism that types into the super pane has to assume its message may be stale by the time it is read.
+- A second super-watch with SUPER_DIR pointed elsewhere treats the real super pane as a worker, and the two watchers loop through each other's wake-ups. Test watchers need their own super agent or none.
+- The dashboard worker's scratch agents and notes (names starting scratch-super-check) are test fixtures; answering one's dialog skewed its test.
+- Right after `herdr pane run`, a process search for the command matches a short-lived wrapper first; the real process is the one that is still there ten seconds later. Watchers keyed on the wrong pid fire at once.
+- A worker that touches its hand-off note up seconds after writing it makes a second event; the fix above makes that harmless, but a note that is deleted and rewritten before the prompt goes out is still named twice in one line.
