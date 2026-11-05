@@ -32,3 +32,4 @@
 - 2026-11-05 19:13 wS synthesis: added the Bull Bitcoin exchange payjoin fact (Bull is a production sender at scale and the receiver that must not break)
 - 2026-11-05 19:19 wX:p1 (claude, superwatch-fix): super-watch must hold its wake-up while the human has text pending on the super pane's input line; branch super-watch-typing, push to hub main, install live
 - 2026-11-05 19:24 wS synthesis: run the taproot inflated amount experiment on Cake, Bull wallet and Bull exchange sender signing paths; report experiment-taproot-amount.md
+- 2026-11-05 19:26 wX:p1 (claude, superwatch-fix): pass secrets to super-sync and the boot clone via environment, not the command line; branch super-sync-token
