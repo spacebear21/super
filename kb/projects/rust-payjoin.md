@@ -57,3 +57,9 @@ The problem: a receiver can inflate the witness_utxo amount on the input it adds
 - Stay on the stated problem; scope creep goes to a later phase.
 - "no need to validate all bindings, let's leave that for CI".
 - A colleague's tests go in a separate commit for independent review.
+
+## Security audit of BIP78/BIP77 (OpenCode session, 2026-11)
+
+- Conclusion: no funds loss in the core except the witness_utxo fee margin theft above, which that audit found independently. It judged a receiver side signature check the better fix because it proves the claimed value, while the advisory work settled on requiring non_witness_utxo; the open trade off either way is that witness only P2WSH, taproot script path and legacy receiver inputs get rejected, a sender visible change. There is no pure Rust script verifier in rust-bitcoin (its built in one needs the C library and a complete transaction).
+- Directions from the human during it: "vulnerabilities that involve either party constructing an unbroadcastable transaction are irrelevant, as the fallback transaction may always be broadcasted instead"; sender and receiver are mutually untrusted; do not rehash known issues; repeat the scan with every abliterated Token Factory model and consolidate; distrust hand written signature code, "it's doing a lot of sensitive work that i'd hate to get wrong".
+- Lessons about running it: OpenCode sub-agents hung on permission dialogs without the worker noticing ("nothings' happened in the last 15 minutes"); a global permissive opencode config fixed it. Adversarial harness failures were the harness's own signing order bugs. The cheapest model found operational issues the strong ones missed.
