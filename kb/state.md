@@ -5,7 +5,7 @@ Last rewritten: 2026-11-05 (after the wT:p1 cron fix hand-off)
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
 - The 2026-11-05 full run finished at 20:20 UTC and committed on master. 231 new drafts under reports/drafts (6 critical, 46 high, 95 medium, 76 low, 9 info) plus the 18 earlier ones await the human's review; 150 projects were added by triage (registry now 469). The refute stage ran mostly on nemotron-3-ultra (465 calls) because this run still ordered by speed; the capability ordering and kimi-k3.1-pro apply from the next run. Zero refusals in about 700 censored-model calls. kimi-k3 was disabled mid run after repeated failures.
-- check --fix on the live registry produced duplicate fingerprint problems (findings existed on both a project and its duplicate); the fix commit was dropped, master keeps the run's registry (6 known problems) plus Bull's exchange entries promoted to active. wT:p1 is fixing the merge on branch merge-fix; when its note lands, merge, run check --fix on master, commit.
+- Registry is clean (0 problems) after the merge fix: duplicate BTCPay projects folded, 11 findings found twice folded into the lower ids (their drafts remain under reports/drafts with the old project id in the name), Bull's exchange entries active.
 - Cron runs bin/run.sh at 02:17 UTC nightly; the flock makes overlap safe. Worth checking the next morning: the Refusals section and the model table of reports/runs/<date>/summary.md, and whether kimi-k3.1-pro's stray close token broke any JSON.
 - Possible task for the human to decide: a triage pass over the 249 drafts (rank, fold the pairs found twice on the duplicate BTCPay projects, put Bull Bitcoin's first) before they read them.
 ## rust-payjoin
