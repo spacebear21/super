@@ -1,13 +1,13 @@
 # State
 
-Last rewritten: 2026-11-05 (after the native-build-6 hand-off)
+Last rewritten: 2026-11-05 (after the triage hand-off)
 
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
 - The 2026-11-05 full run finished at 20:20 UTC and committed on master. 231 new drafts under reports/drafts (6 critical, 46 high, 95 medium, 76 low, 9 info) plus the 18 earlier ones await the human's review; 150 projects were added by triage (registry now 469). The refute stage ran mostly on nemotron-3-ultra (465 calls) because this run still ordered by speed; the capability ordering and kimi-k3.1-pro apply from the next run. Zero refusals in about 700 censored-model calls. kimi-k3 was disabled mid run after repeated failures.
 - Registry is clean (0 problems) after the merge fix: duplicate BTCPay projects folded, 11 findings found twice folded into the lower ids (their drafts remain under reports/drafts with the old project id in the name), Bull's exchange entries active.
 - Cron runs bin/run.sh at 02:17 UTC nightly; the flock makes overlap safe. Worth checking the next morning: the Refusals section and the model table of reports/runs/<date>/summary.md, and whether kimi-k3.1-pro's stray close token broke any JSON.
-- Triage pass in flight (human asked): wT:p1 (now named triage, the session was killed and resumed after it fanned out ten Claude subagents) on branch triage, Claude subagents forbidden, opencode for bulk reading; reports/triage/2026-11-05.md with a reading list of 20, Bull first; note triage.md.
+- Triage done (wT:p1, name triage, idle): branch triage in ~/repos/payjoin-audit-triage, one commit adding reports/triage/2026-11-05.md with a reading list of 19 (Bull first), 9 false positives, 20 inflated groups, 2 dissent cases, duplicates, 153 parked. No finding, draft or registry changed. Waiting on the human to read it and say which findings get written up and sent; the worker can be released or reused for that. Next run should scan Bull Bitcoin's own three repositories, which have never been scanned.
 ## rust-payjoin
 
 - Native FFI builds PR 2023: Bull Bitcoin's Dart maintainer answered on 2026-11-05 that they need a build from source mode for a future F-Droid listing, so the Dart package keeps both modes, which is what the worker's branch native-build-6 already does. Waiting on the human: force push native-build-6 to spacebear21:native-build (the PR head) and replace the PR description with ~/repos/native-build-6-PR-2023.md. The phase2 worker (wS:pP) has nothing left to do and can be released once the push is done.
