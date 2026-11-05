@@ -23,6 +23,12 @@ Fixes committed after the run: refuters get the registered project role, contest
 
 - Headless workers started by the pipeline read ~/.claude/CLAUDE.md and write hand-off notes to ~/super/inbox/<branch>.md even though their output is already captured by the harness. Worth a prompt-level opt out in prompts/_common.md if the noise grows.
 
-## Open question for the human (2026-11-05 02:11, from the wT:p1 worker)
+## Model pool (settled 2026-11-05 02:15 by the wT:p1 worker, commit e27c3cc)
 
-The model pool in config.json includes nine opencode:opencode/... entries (OpenCode Zen free tier: keyless, anonymised, prompts may be logged or used for training, models rotate). The tff/ models (Token Factory, key in /etc/opencode/opencode.json) carried most of the load and cover every stage. All audited repos are public, so nothing sensitive leaks. The worker offers to drop the free tier entries in one commit if the human prefers. Awaiting the human's answer.
+The OpenCode Zen free tier entries (opencode:opencode/...) were dropped from config.json: keyless, anonymised, terms allow logging, models rotate. The opencode backend uses the Token Factory tff/ family only (key in /etc/opencode/opencode.json); Claude and Codex stay as the non-blocking minority. The worker made this call itself after asking the human at 02:11 and getting no answer; the human has not confirmed it.
+
+## Entry point and cron (2026-11-05, worker wT:p1, master at dd270ad)
+
+- The entry point is bin/run.sh and `bin/audit run` (renamed from nightly in 9a3dafb, d3ef3e3). Crontab: `17 02 * * * /home/agent/repos/payjoin-audit/bin/run.sh >>~/.cache/payjoin-audit/cron.log 2>&1`.
+- The first cron run (2026-11-05 02:17 UTC) failed every model call because cron's PATH lacks ~/.local/bin, so no backend was found; 79 tasks had no usable answer, every model got disabled, and an empty run was committed as 73d8902 and reverted in 5f7f4fe. Fixes: the wrapper exports the user bin directories (5ce18b8) and the CLI refuses to start without a backend on PATH (dd270ad).
+- Next scheduled run: 2026-11-06 02:17 UTC. Check ~/.cache/payjoin-audit/cron.log after it; a healthy run shows nonzero answer counts per model and a commit on master.

@@ -1,10 +1,10 @@
 # State
 
-Last rewritten: 2026-11-05 02:21
+Last rewritten: 2026-11-05 (after the wT:p1 cron fix hand-off)
 
 ## payjoin-audit (nightly multi model audit of Payjoin implementations)
 
-- First limited nightly done (02:09). master at 30427e5, cron live at 02:17 UTC. 18 drafts in reports/drafts/ await human review before anything is sent; see projects/payjoin-audit.md for the ranked ones. The wT:p1 worker is finished and asked the human whether to drop the OpenCode Zen free tier models from the pool. The full nightly runs from cron and commits its own results.
+- First limited run done by hand (02:09). master at dd270ad, cron live at 02:17 UTC calling bin/run.sh (renamed from nightly). The 2026-11-05 cron run failed on PATH and was reverted; fixed, next run 2026-11-06 02:17 UTC, worth checking cron.log after it. 18 drafts in reports/drafts/ await human review before anything is sent; see projects/payjoin-audit.md for the ranked ones. The wT:p1 worker is finished; it dropped the OpenCode Zen free models itself (e27c3cc), the human has not confirmed. Scheduled runs commit their own results.
 - Pane wT:p3 (tab '1', shows as opencode, codex or claude) is the shell running bin/audit; Herdr flips its status as the pipeline spawns codex calls, so 'opencode in 1 is now idle' wake-ups are noise while the run log keeps advancing.
 - Headless refute workers inherit the global hand-off rule and write notes to ~/super/inbox/ named after the audited repo's branch (first seen: master.md, 00:32). Their result is already in ~/.cache/payjoin-audit/calls/<run>/*.out.json. Treat such notes as noise: read, confirm the match, delete.
 
