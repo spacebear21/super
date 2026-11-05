@@ -10,6 +10,10 @@ What runs on the box as stopgaps until the image deploy: ~/super made by hand fr
 
 Dashboard API: GET /api/super gives my pane, status and transcript; POST /api/super/say types into my pane (limits: 4000 chars, printable, X-Dashboard header, 409 when no super agent or on a dialog).
 
+## Update 02:30
+
+The human made ~/super the git repository (origin spacebear21/super.git) with one initial commit holding the kb files unchanged; the old kb/.git is gone. The new super-watch from main wakes the super agent only on inbox notes and dialogs. Scratch tests in ~/scratch-super-check-3 (a dialog and a note) are to be left alone.
+
 ## Steps left for the laptop (human)
 
 1. Deploy the image with infra/scripts/workhorse-deploy.sh. Afterwards stop the hand-run super-watch in pane wV:p2 (ctrl+c), since the entrypoint runs its own.
