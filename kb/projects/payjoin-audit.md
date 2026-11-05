@@ -25,7 +25,7 @@ Fixes committed after the run: refuters get the registered project role, contest
 
 ## Model pool (settled 2026-11-05 02:15 by the wT:p1 worker, commit e27c3cc)
 
-The OpenCode Zen free tier entries (opencode:opencode/...) were dropped from config.json: keyless, anonymised, terms allow logging, models rotate. The opencode backend uses the Token Factory tff/ family only (key in /etc/opencode/opencode.json); Claude and Codex stay as the non-blocking minority. The worker made this call itself after asking the human at 02:11 and getting no answer; the human has not confirmed it.
+The OpenCode Zen free tier entries (opencode:opencode/...) were dropped from config.json: keyless, anonymised, terms allow logging, models rotate. The opencode backend uses the Token Factory tff/ family only (key in /etc/opencode/opencode.json); Claude and Codex stay as the non-blocking minority. This was the human's decision.
 
 ## Entry point and cron (2026-11-05, worker wT:p1, master at dd270ad)
 
