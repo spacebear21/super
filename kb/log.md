@@ -38,3 +38,4 @@
 - 2026-11-05 20:55 wT:p1 (claude): triage pass over the 249 payjoin-audit drafts, reading list of 20 with Bull Bitcoin first, false positives, dissent rescues, duplicates; branch triage
 - 2026-11-05 20:57 wS synthesis: append an addendum on the late CoinJoin and proof of ownership reports
 - 2026-11-05 21:16 wT:p1: stop spawning Claude subagents for the triage; use findings.json and opencode headless calls instead
+- 2026-11-05 23:35 wT:p1 (triage): brief for a decision sheet reports/triage/2026-11-05-decisions.md on branch triage: numbered questions with recommended defaults for class, project, severity, finding and reading-list verdicts, plus a question to command map
