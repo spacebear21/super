@@ -61,3 +61,12 @@ The OpenCode Zen free tier entries (opencode:opencode/...) were dropped from con
 - After a refusal the fallback is an uncensored model of the same tier; refute seats widen to the pool minus the finder's family if their list has none.
 - run_audit_tasks processes each task's findings as soon as it answers (runner.map on_result, a processing pool of total/2 workers). Explore still waits.
 - Pre-existing problems the worker saw: bin/audit check reports 6 registry problems created by this run's triage (btcpayserver-btcpayserver and btcpayserver-btcpayserver-bip78 duplicate btcpayserver and btcpayserver-bip78 by repository; depends_on names bip78-sender and payjoin-ffi resolve to nothing). Triage adds projects that the repo-sharing check then flags; the registry has grown to 471 projects. pytest leaves reports/runs/t and reports/runs/test behind, which run.sh would sweep into a run commit. Both are follow-ups.
+
+## Registry fixes (2026-11-05, worker wT:p1, branch registry-fixes code commits merged into master at bc1935b)
+
+- Root cause of the duplicate projects: repository comparison lower cased only the host, so BTCPayServer/... and btcpayserver/... looked different. repo_key() lower cases the whole path; project_by_repo also matches github.full_name and aliases. A rediscovered repository folds its sources and evidence into the known project (discover.fold_sighting).
+- `python3 -I bin/audit check --fix` merges projects sharing a repository into the entry added first (then the one with scan history, then lower id), repoints findings, fingerprints and dependencies, and resolves depends_on names through the aliases (payjoin-ffi -> rust-payjoin) or parks them in depends_on_unresolved (bip78-sender is a role name, not a project). Idempotent. TO RUN against the main checkout once the current run has committed, then commit the registry.
+- Triage now resolves dependency names as it writes them; maturity filters depended_on_by to known ids.
+- tests/conftest.py redirects REPORTS to a temp dir, so pytest leaves nothing under reports/runs.
+- The worker's data commit (5b255d5, the same fix applied to a registry snapshot) was dropped to avoid conflicting with the run.
+- Worker's caveats: survivor choice is by added date (review the "merged X into Y" lines); nothing writes aliases except the merge; the triage prompt could be told to name repositories only.
