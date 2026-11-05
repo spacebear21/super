@@ -21,3 +21,4 @@
 - 2026-11-05 18:04 wS discovery-c (opencode): survey how CoinJoin input verification and proof of ownership handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
 - 2026-11-05 18:04 wS discovery-d (opencode): survey how PSBT standards and libraries, Liquid PSET, Ark boarding handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
 - 2026-11-05 18:04 wS discovery-e (opencode): survey how multi party funding protocols and other payjoin implementations handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
+- 2026-11-05 18:15 wS discovery-a: rewrite its two Lightning reports, which vanished from the reports directory
