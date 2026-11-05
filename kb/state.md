@@ -13,7 +13,8 @@ Last rewritten: 2026-11-05 (after the wT:p1 cron fix hand-off)
 ## rust-payjoin
 
 - PR #2016 native builds: phase2 (wS:pP) finished native-build-6 at bb0a47f9 with report ~/repos/native-build-6-REPORT.md; The open PR is #2023 (head spacebear21:native-build at 9c01ab79), not #2016. Recommendation to the human: force push native-build-6 (bb0a47f9) to spacebear21:native-build and paste the PR description from ~/repos/native-build-6-PR-2023.md. The remote branch holds nothing beyond the rebased nine commits. Waiting on the human. Details in projects/rust-payjoin.md.
-- Other wS workers not yet reviewed by super: fallback_tx exposure in monitor typestate (wS:pH, done), BIP-78 witness_utxo fee gap (wS:pR, idle), security audit of BIP78/BIP77 (wS:p11, opencode, said "Nothing needed").
+- witness_utxo fee fix (wS:pR, idle): two finished commits on a local branch (reject contradicting UTXO data; require the previous transaction on receiver inputs unless the sender's taproot signing covers amounts). Waiting on the human: pick a path (worker recommends adding a sender side lookup of missing previous transactions so no payjoin is lost), and a git bundle of the private PR branch plus the colleague's tests at ~/forged.bundle, since the box cannot read the private advisory fork. Human moved the private GHSA PR to draft on 2026-11-05 pending a decision. Also open from that worker: advisory text placeholders, and a public issue that Core 32.1's PSBTv2 default breaks payjoin-cli (unrelated to the fix).
+- Decision context from the other finished wS workers (fallback_tx review, security audit) is filed in projects/rust-payjoin.md.
 - rust-payjoin-red-team: the wT:p1 worker that built payjoin-audit is done (see payjoin-audit above).
 
 ## ldk-node

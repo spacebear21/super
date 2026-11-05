@@ -13,3 +13,4 @@
 - 2026-11-05 16:22 wT:p1 (claude): brief for branch registry-fixes (worktree ~/repos/payjoin-audit-registry): stop triage duplicating projects by repository plus a repeatable merge, unresolved depends_on names, pytest run dirs, README free tier line
 - 2026-11-05 16:40 wX:p1 (claude, superwatch-fix): brief for branch super-watch-stale (worktree ~/repos/harness-super-watch-stale): drop queued inbox note events whose file is gone at prompt time, no debounce
 - 2026-11-05 16:43 wX:p2 (claude, scheduler): brief for branch scheduler (worktree ~/repos/harness-scheduler): committed schedule file, cron in the image, schedule-refresh renders the crontab and clones task repos at boot and on push, runbook section; first entry the payjoin audit
+- 2026-11-05 17:33 wS:pR (claude): status request on the witness_utxo fee fix for the human: where it stands, paths forward with a recommendation, what it needs
