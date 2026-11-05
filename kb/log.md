@@ -25,3 +25,4 @@
 - 2026-11-05 18:16 wS discovery-b: do not delete or edit files in the shared reports directory written by other agents
 - 2026-11-05 18:16 wS discovery-c: do not delete or edit files in the shared reports directory written by other agents
 - 2026-11-05 18:16 wS discovery-d: do not delete or edit files in the shared reports directory written by other agents
+- 2026-11-05 18:26 wT:p1 (claude): add muse-spark-open and missing tff models to the payjoin-audit pool, rank models by benchmark quality ahead of speed (branch model-quality)
