@@ -11,3 +11,4 @@
 - 2026-11-05 16:00 wT:p1 (claude): brief for branch refusal-fallback (worktree ~/repos/payjoin-audit-refusal): censored models first in audit/refute with refusal detection and uncensored fallback, refusal stats in the summary, pipeline finding processing behind audit tasks
 - 2026-11-05 16:10 wT:p3 (shell): ctrl+c and reran bin/run.sh --name 2026-11-05 after merging refusal-fallback (526e139)
 - 2026-11-05 16:22 wT:p1 (claude): brief for branch registry-fixes (worktree ~/repos/payjoin-audit-registry): stop triage duplicating projects by repository plus a repeatable merge, unresolved depends_on names, pytest run dirs, README free tier line
+- 2026-11-05 16:40 wX:p1 (claude, superwatch-fix): brief for branch super-watch-stale (worktree ~/repos/harness-super-watch-stale): drop queued inbox note events whose file is gone at prompt time, no debounce

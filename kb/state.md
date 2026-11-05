@@ -22,4 +22,6 @@ Last rewritten: 2026-11-05 (after the wT:p1 cron fix hand-off)
 
 ## harness
 
-- Super agent first run verified and recorded by the worker in wV:p1 (branch super-record, worktree ~/repos/harness-super, hub main at 44f287d). Worker is done; its scratch fixtures are gone. Follow-up done (a384070 in hub main): ~/super is the repo, notes-and-dialogs watcher live. Laptop steps for the human in projects/harness.md: image deploy, the private spacebear21/super repo and PAT, /login, /rc. No remote copy of memory until the repo and PAT exist.
+- Hub is the bare repo ~/repos/harness.git, main at cece2c4. Workspace wV and its worker are gone; the super agent now sits in workspace wW (label super) as wW:p1. Harness work goes in workspace wX (label harness).
+- wX:p1 (claude, name superwatch-fix) is on branch super-watch-stale in ~/repos/harness-super-watch-stale: super-watch drops queued note events whose file is gone at prompt time (no debounce, per the human). When its note lands: review, then decide with the human whether to swap the live /usr/local/bin/super-watch (pid 462 under a restart loop, pid 454) before the next image deploy; the fix is in the hub only until deployed.
+- Earlier: super-record (a384070 in hub main) made ~/super the repo and the notes-and-dialogs watcher live. Laptop steps for the human in projects/harness.md: image deploy, the private spacebear21/super repo and PAT, /login, /rc.
