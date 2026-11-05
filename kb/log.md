@@ -9,3 +9,4 @@
 - 2026-11-05 15:10 wT:p3 (shell): ran bin/run.sh --name 2026-11-05 after merging branch parallel into master
 - 2026-11-05 15:53 wT:p3 (shell): ctrl+c and reran bin/run.sh --name 2026-11-05 after committing ada2419 (no race on kimi-k3-abliterated)
 - 2026-11-05 16:00 wT:p1 (claude): brief for branch refusal-fallback (worktree ~/repos/payjoin-audit-refusal): censored models first in audit/refute with refusal detection and uncensored fallback, refusal stats in the summary, pipeline finding processing behind audit tasks
+- 2026-11-05 16:10 wT:p3 (shell): ctrl+c and reran bin/run.sh --name 2026-11-05 after merging refusal-fallback (526e139)
