@@ -15,3 +15,9 @@
 - 2026-11-05 16:43 wX:p2 (claude, scheduler): brief for branch scheduler (worktree ~/repos/harness-scheduler): committed schedule file, cron in the image, schedule-refresh renders the crontab and clones task repos at boot and on push, runbook section; first entry the payjoin audit
 - 2026-11-05 17:33 wS:pR (claude): status request on the witness_utxo fee fix for the human: where it stands, paths forward with a recommendation, what it needs
 - 2026-11-05 17:38 wS:pR (claude): relayed the human's rejection of the fee fix PR shape, stand down
+- 2026-11-05 18:03 wS:p2R (claude fable, fundamentals): design from first principles how the payjoin sender should treat untrusted receiver inputs; report to ~/review-drafts/untrusted-inputs/fundamentals.md; no web, no other workers' material
+- 2026-11-05 18:04 wS discovery-a (opencode): survey how Lightning interactive tx and channel funding handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
+- 2026-11-05 18:04 wS discovery-b (opencode): survey how hardware wallet fee attack and Core PSBT handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
+- 2026-11-05 18:04 wS discovery-c (opencode): survey how CoinJoin input verification and proof of ownership handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
+- 2026-11-05 18:04 wS discovery-d (opencode): survey how PSBT standards and libraries, Liquid PSET, Ark boarding handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
+- 2026-11-05 18:04 wS discovery-e (opencode): survey how multi party funding protocols and other payjoin implementations handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
