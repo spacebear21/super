@@ -27,3 +27,4 @@
 - 2026-11-05 18:16 wS discovery-d: do not delete or edit files in the shared reports directory written by other agents
 - 2026-11-05 18:26 wT:p1 (claude): add muse-spark-open and missing tff models to the payjoin-audit pool, rank models by benchmark quality ahead of speed (branch model-quality)
 - 2026-11-05 18:40 wX:p1 (claude, superwatch-fix): add kimi-k3.1-pro to the harness provisioning copy of the opencode config, branch tff-kimi-pro, push to hub main
+- 2026-11-05 18:59 wS wS:p2Y (claude fable, synthesis): compare the fundamentals design against the discovery reports, settle the P2WSH disguise question step by step, report to ~/review-drafts/untrusted-inputs/synthesis.md
