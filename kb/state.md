@@ -1,6 +1,6 @@
 # State
 
-Last rewritten: 2026-11-05 (after the wT:p1 cron fix hand-off)
+Last rewritten: 2026-11-05 (after the native-build-6 hand-off)
 
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
@@ -10,7 +10,7 @@ Last rewritten: 2026-11-05 (after the wT:p1 cron fix hand-off)
 - Triage pass in flight (human asked): wT:p1 (now named triage, the session was killed and resumed after it fanned out ten Claude subagents) on branch triage, Claude subagents forbidden, opencode for bulk reading; reports/triage/2026-11-05.md with a reading list of 20, Bull first; note triage.md.
 ## rust-payjoin
 
-- Native FFI builds PR 2023: the human force pushed the six commit version (rebased on master) on 2026-11-05 and asked Bull Bitcoin's Dart maintainer whether the Dart package should keep a build from source mode beside the default prebuilt libraries (reasoning in projects/rust-payjoin.md). Waiting on that answer; then the human picks, and the phase2 worker (wS:pP) prepares the prebuilt only change if that is the choice. Nothing else pending.
+- Native FFI builds PR 2023: Bull Bitcoin's Dart maintainer answered on 2026-11-05 that they need a build from source mode for a future F-Droid listing, so the Dart package keeps both modes, which is what the worker's branch native-build-6 already does. Waiting on the human: force push native-build-6 to spacebear21:native-build (the PR head) and replace the PR description with ~/repos/native-build-6-PR-2023.md. The phase2 worker (wS:pP) has nothing left to do and can be released once the push is done.
 - witness_utxo fee fix (wS:pR, idle): two finished commits on a local branch (reject contradicting UTXO data; require the previous transaction on receiver inputs unless the sender's taproot signing covers amounts). The human rejected this shape on 2026-11-05 (breaks honest Bull and Cake receivers; severity does not justify it), moved the private PR to draft; the worker was told to stand down.
 - Rethink complete: synthesis.md, fundamentals.md, eight discovery reports and experiment-taproot-amount.md under ~/review-drafts/untrusted-inputs/ (backups in untrusted-inputs-backup). Conclusions filed in projects/rust-payjoin.md. Waiting on the human's decision on the path (the synthesis's universal fixes plus accepting the bounded residual) and on asking Bull whether their exchange sending wallet signs taproot. The seven rethink agents (fundamentals, synthesis, discovery-a to e in wS tabs tX and tY; discovery-c still running on kimi-k3) and the worktree ~/repos/rust-payjoin-untrusted-inputs stay until the human is done with the reports; then release them.
 - Decision context from the other finished wS workers (fallback_tx review, security audit) is filed in projects/rust-payjoin.md.
