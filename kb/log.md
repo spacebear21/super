@@ -7,3 +7,4 @@
 - 2026-11-05 02:55 wT:p3 (shell): ran bin/run.sh for a full payjoin audit at the human's request
 - 2026-11-05 15:00 wT:p1 (claude): brief to parallelize payjoin-audit on branch parallel (worktree ~/repos/payjoin-audit-parallel): parallel process_finding, raise concurrency, spread load off the two uncensored models, back off on 429s, race discovery with shorter timeout, flock in run.sh
 - 2026-11-05 15:10 wT:p3 (shell): ran bin/run.sh --name 2026-11-05 after merging branch parallel into master
+- 2026-11-05 15:53 wT:p3 (shell): ctrl+c and reran bin/run.sh --name 2026-11-05 after committing ada2419 (no race on kimi-k3-abliterated)
