@@ -29,3 +29,7 @@ The human made ~/super the git repository (origin spacebear21/super.git) with on
 ## Open note from the worker
 
 A second watcher with SUPER_DIR pointed elsewhere treats the real super pane as a worker, and the two watchers loop through each other's wake-ups. Recorded in docs/progress.md as open.
+
+## super-watch quirk (seen 2026-11-05 16:29)
+
+A rewritten inbox note counts as new (the watcher tracks name plus mtime by design), and a prompt typed into the super pane mid-turn is held by Claude Code until the turn ends. So when a worker writes a note, then touches it up seconds later (wT:p1 did a sed on registry-fixes.md 25 s after writing it), the super agent gets a second wake-up for a note it has already handled and deleted. Fix to make in the harness repo: at prompt time drop queued note events whose file no longer exists in the inbox (and perhaps wait until a note's mtime has been stable for ~10 s before announcing it). The hand-run watcher is pid 462 under a `while :; do super-watch; sleep 10; done` loop (pid 454), no longer in pane wV:p2.
