@@ -22,3 +22,6 @@
 - 2026-11-05 18:04 wS discovery-d (opencode): survey how PSBT standards and libraries, Liquid PSET, Ark boarding handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
 - 2026-11-05 18:04 wS discovery-e (opencode): survey how multi party funding protocols and other payjoin implementations handle untrusted peer inputs; reports to ~/review-drafts/untrusted-inputs/
 - 2026-11-05 18:15 wS discovery-a: rewrite its two Lightning reports, which vanished from the reports directory
+- 2026-11-05 18:16 wS discovery-b: do not delete or edit files in the shared reports directory written by other agents
+- 2026-11-05 18:16 wS discovery-c: do not delete or edit files in the shared reports directory written by other agents
+- 2026-11-05 18:16 wS discovery-d: do not delete or edit files in the shared reports directory written by other agents
