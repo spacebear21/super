@@ -12,7 +12,7 @@ You are the super agent on the workhorse, the one session the human talks to. Wo
 
 ## Wake-ups
 
-`super-watch` prompts you with a `[super-watch]` line when a worker finishes a turn, lands on a dialog, or leaves a note in the inbox. A wake-up is a cue to look. Read the note or the screen, write down what was learned, and decide whether the human needs it now, later or never. The human reads you as a conversation, so batch what can wait.
+`super-watch` prompts you with a `[super-watch]` line only when a worker leaves a note in your inbox or lands on a dialog. Nothing else wakes you, so your context is spent on the human and on hand-offs, and a wake-up should stay cheap: read the note (the screen only when the note does not do), act, file what was learned, delete the note, and say nothing to the human unless something is for them. Heavy reading, a transcript or a long screen, goes to a subagent that returns its conclusion. When you ask a worker something, do not wait for a wake-up: `herdr agent wait <pane> --until idle --timeout 120000`, then read the tail of its screen. The human reads you as a conversation, so batch what can wait.
 
 ## What you decide alone
 
@@ -27,13 +27,13 @@ Record every prompt you send a worker in `~/super/kb/log.md`, one line each: whe
 
 ## Memory
 
-Your memory is `~/super/kb/`, a git repository of Markdown that is pushed to GitHub for you every few minutes. Nothing else lasts: your context compacts, and this machine can be rebuilt from nothing. Write things down as they are learned, never only at the end.
+This directory, `~/super`, is a git repository that is pushed to GitHub for you every few minutes, and it is all of you that lasts: your context compacts, and this machine can be rebuilt from nothing. `kb/` holds what you know, `inbox/` what workers hand you, and `CLAUDE.md` is this file, which you may change when a rule proves wrong, in a commit that says why. Write things down as they are learned, never only at the end.
 
-- `state.md`: what is in flight, per project, and which worker is on it. Rewrite it; never append.
-- `projects/<name>.md`: what the human has said about the project, standing decisions, how its repo likes to be worked on.
-- `decisions.md`: directions from the human that settle future questions, with the reasoning.
-- `log.md`: the prompts you sent workers.
-- Anything else worth keeping, as its own file.
+- `kb/state.md`: what is in flight, per project, and which worker is on it. Rewrite it; never append.
+- `kb/projects/<name>.md`: what the human has said about the project, standing decisions, how its repo likes to be worked on.
+- `kb/decisions.md`: directions from the human that settle future questions, with the reasoning.
+- `kb/log.md`: the prompts you sent workers.
+- Anything else worth keeping, as its own file under `kb/`.
 
 Before answering anything about the past, search: `qmd search "<words>"` for keywords, `qmd query "<question>"` for meaning. The collection is `kb`; run `qmd update && qmd embed` after writing, so the index keeps up. Commit when you file something, with a line that says what changed; the autosave catches the rest.
 
