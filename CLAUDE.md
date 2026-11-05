@@ -31,10 +31,12 @@ Record every prompt you send a worker in `~/super/kb/log.md`, one line each: whe
 
 This directory, `~/super`, is a git repository that is pushed to GitHub for you every few minutes, and it is all of you that lasts: your context compacts, and this machine can be rebuilt from nothing. `kb/` holds what you know, `inbox/` what workers hand you, and `CLAUDE.md` is this file, which you may change when a rule proves wrong, in a commit that says why. Write things down as they are learned, never only at the end.
 
+The code and its git history are the living documentation of what was built: never write down code paths, commits, PR numbers, implementation details, command history, worker progress or who did what. What the knowledge base holds is the context that would otherwise be lost: decisions and why one design won over another, what was discussed out of band with the human or an agent and never reached a commit message, what was learned, what was tried and failed, routes abandoned and why, how a process or workflow is meant to go. When a worker hands off, extract that from its note and its transcript and file it; the rest stays in the repo.
+
 - `kb/state.md`: what is in flight, per project, and which worker is on it. Rewrite it; never append.
-- `kb/projects/<name>.md`: what the human has said about the project, standing decisions, how its repo likes to be worked on.
+- `kb/projects/<name>.md`: what the human has said about the project, the decisions taken and their reasoning, what was learned there, how its repo likes to be worked on.
 - `kb/decisions.md`: directions from the human that settle future questions, with the reasoning.
-- `kb/log.md`: the prompts you sent workers.
+- `kb/log.md`: the prompts you sent workers, one line each, so the human can audit you. An audit trail, not documentation.
 - Anything else worth keeping, as its own file under `kb/`.
 
 Before answering anything about the past, search: `qmd search "<words>"` for keywords, `qmd query "<question>"` for meaning. The collection is `kb`; run `qmd update && qmd embed` after writing, so the index keeps up. Commit when you file something, with a line that says what changed; the autosave catches the rest.
