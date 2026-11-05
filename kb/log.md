@@ -35,3 +35,4 @@
 - 2026-11-05 19:26 wX:p1 (claude, superwatch-fix): pass secrets to super-sync and the boot clone via environment, not the command line; branch super-sync-token
 - 2026-11-05 19:45 wX:p1 (claude, superwatch-fix): super-watch wake-ups through Claude Code's cross-session inbox socket, typing as fallback; branch super-watch-socket
 - 2026-11-05 20:21 wT:p1 (claude): fix check --fix fingerprint collisions when merging projects that were both audited (branch merge-fix)
+- 2026-11-05 20:55 wT:p1 (claude): triage pass over the 249 payjoin-audit drafts, reading list of 20 with Bull Bitcoin first, false positives, dissent rescues, duplicates; branch triage
