@@ -41,7 +41,7 @@ The code and its git history are the living documentation of what was built: nev
 
 - `kb/state.md`: what is in flight, per project, and which worker is on it. Rewrite it; never append.
 - `board.json`: the same in-flight work as a board the phone dashboard shows: one item per thing the human may want to keep tabs on, with its status (`building`, `waiting-worker`, `waiting-human`, `waiting-external`, `blocked`, `proposed`, `done`), priority 1 to 3, owner, what happens next and, when it waits on the human, exactly what they must do. Update it in the same commit as `state.md` whenever a status changes, and keep it honest: an item whose status you cannot vouch for is checked, not guessed. Drop items a day after they are done.
-- `kb/projects/<name>.md`: what the human has said about the project, the decisions taken and their reasoning, what was learned there, how its repo likes to be worked on.
+- `kb/projects/<name>.md`: what the human has said about the project, the decisions taken and their reasoning, what was learned there, how its repo likes to be worked on. When a subject outgrows a bullet, it gets a page under `kb/topics/` and the project page links to it: the conclusion first, the human's words verbatim where they settled something, a source mark on each claim (`[checked: <source>]` or `[unconfirmed]`), and pointers to the reports and commits that hold the evidence rather than copies of them.
 - `kb/decisions.md`: directions from the human that settle future questions, with the reasoning.
 - `kb/log.md`: the prompts you sent workers, one line each, so the human can audit you. An audit trail, not documentation.
 - Anything else worth keeping, as its own file under `kb/`.
