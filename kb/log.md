@@ -60,3 +60,4 @@
 - 2026-11-06T21:46 wX:p8 interop: build wave 1a of the interop matrix in ~/repos/payjoin-interop (runner on payjoin-test-utils, driver contract, payjoin-cli reference, wave-1 scenarios, bdk-cli, version skew, bitcoinjs, results page, run.sh)
 - 2026-11-06T21:49 wT:p6 interop: fold the matrix into payjoin-audit (worktree payjoin-audit-interop, branch interop, interop/ crate, bin/run-interop.sh, participants from the registry), delete the standalone repo, then continue
 - 2026-11-06 22:08 wT:p7 (claude, pr-review): run the PR-review stage live on Cake PR 3363 against a scratch cache, compare with the manual review, fix what breaks, hand off again
+- 2026-11-06 22:11 wT:p6 (claude, interop): nudge after the usage limit, continue the registry loader on branch interop, check git status first
