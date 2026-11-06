@@ -76,3 +76,4 @@
 - 2026-11-06 23:29 w11:p1 (claude opus, board): add the progress record and the renderProject shadow fix, hand off again
 - 2026-11-06 23:40 w11:p2 (claude opus, memory): addendum: dream reviewed in the same job (runbook wording), add the interop matrix schedule entry at 04:45 UTC
 - 2026-11-06 23:51 dream/2026-11-06 reviewed: merged with fixes (holds restored, memory and deploy kept from main, two quotes re-marked checked, dates corrected); branch and worktree removed
+- 2026-11-06 23:57  (claude opus, tasks): move the board (renamed Tasks) and the agents list to their own dashboard pages with a nav row on home; branch tasks in ~/repos/harness-tasks

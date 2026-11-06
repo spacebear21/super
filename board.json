@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:51:05Z",
+  "updated": "2026-11-06T23:57:28Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -119,6 +119,16 @@
       "since": "2026-11-06",
       "next": "Decide the nightly turn cap; deploy carries the scripts into the image",
       "needs": "Say the dream turn cap (150 is about $25 a night, 40 was $6.48); run the laptop deploy when convenient. The trial dream branch is under review now."
+    },
+    {
+      "id": "dashboard-tasks",
+      "project": "harness",
+      "title": "Dashboard: Tasks and Agents as their own pages",
+      "status": "building",
+      "priority": 2,
+      "owner": "tasks  (Opus)",
+      "since": "2026-11-06",
+      "next": "Home keeps the chat and a nav row; Tasks (the board) and Agents move to their own pages; then merge to the hub's main"
     }
   ]
 }
