@@ -14,7 +14,9 @@ Notes can be wrong from the day they were written, and the world moves under the
 - the git history of this repository and of the repos under `~/repos`;
 - `kb/log.md`, the prompts the super agent sent, which say what was asked, never what was done.
 
-Never trust one note to check another. Delegate bulk reading to a Token Factory model through `opencode run --pure -m tff/<model>` (glm-5.3 is reliable; never kimi) and keep only its conclusion; the judgement about what memory should say is yours.
+Never trust one note to check another. Delegate bulk reading to a Token Factory model through `opencode run --pure -m tff/<model>` (glm-5.3 is reliable; never kimi) only over material that is already public, the repos under `~/repos` and published reports; transcripts, the inbox, the knowledge base and anything embargoed never leave this box, so read those yourself. Keep only the delegate's conclusion; the judgement about what memory should say is yours.
+
+The global instructions in `~/.claude/CLAUDE.md` are written for workers; their hand-off rule and the Herdr skill do not apply to you. Your only note is `inbox/dream.md`, described below, and you never open a Herdr pane.
 
 ## What a pass does
 

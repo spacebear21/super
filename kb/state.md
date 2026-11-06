@@ -34,7 +34,7 @@ Last rewritten: 2026-11-06 (after the second sheet's answers)
 
 ## harness
 
-- Memory (w11:p2, name memory, Claude Opus, working): branch memory in ~/repos/harness-memory builds transcripts-index (qmd collection transcripts), super-dream (headless Fable pass from ~/super/dreaming.md on a dream/<date> branch of a ~/super worktree, note to inbox/dream.md), a 05:30 UTC schedule entry and the runbook. The super agent reshapes kb into index pages plus kb/topics/ itself.
+- Memory: on the hub's main (transcripts-index, super-dream, schedule entries for the dream at 05:30 and the interop matrix at 04:45 UTC, runbook); scripts symlinked into ~/.local/bin until the deploy. The trial dream branch dream/2026-11-06 is under review by an Opus subagent; merge or reject follows. Open with the human: the nightly turn cap. The super agent reshapes kb into topic pages as it goes; the dream pass continues it. Worker released.
 
 - Dashboard board: on the hub's main (seven commits, 14 tests, progress record, plus a fix for task log rows missing from project views), live on the box through the post-receive hook; the laptop deploy carries it into the image. Worker released. Shows ~/super/board.json as a Priorities section on home and per project, read only, with unittest coverage; goes live on a push to the hub's main and the deploy. The board file itself is written by the super agent with every state change (rule in CLAUDE.md).
 

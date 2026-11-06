@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:32:21Z",
+  "updated": "2026-11-06T23:48:45Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -76,7 +76,7 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main, workhorse-deploy.sh; super repo on GitHub with a PAT; /login"
+      "needs": "Pull hub main (now 5101115 board plus memory e75f670), workhorse-deploy.sh outside the 02:17 window; super repo on GitHub with a PAT; /login"
     },
     {
       "id": "pr-1971",
@@ -123,11 +123,12 @@
       "id": "memory-dreaming",
       "project": "super",
       "title": "Memory: dreaming pass, transcript index, topic pages",
-      "status": "building",
+      "status": "waiting-human",
       "priority": 2,
-      "owner": "memory w11:p2 (Opus); super for the topic pages",
+      "owner": "human",
       "since": "2026-11-06",
-      "next": "transcripts-index, super-dream, schedule entry, runbook; super reshapes kb into topic pages"
+      "next": "Decide the nightly turn cap; deploy carries the scripts into the image",
+      "needs": "Say the dream turn cap (150 is about $25 a night, 40 was $6.48); run the laptop deploy when convenient. The trial dream branch is under review now."
     }
   ]
 }
