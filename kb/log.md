@@ -67,3 +67,4 @@
 - 2026-11-06 22:51 wT:p6 (claude fable, interop): stop coding, commit coherent state, write a handover brief for an OpenCode agent for deliverables 5 to 7
 - 2026-11-06 22:51 wT:p7 (claude fable, pr-review): finish reading the trial, no code; hand off the comparison plus a fix list for an OpenCode agent
 - 2026-11-06 22:56 wT:p8 (opencode glm-5.3, interop-build): finish the interop matrix deliverables 5 to 7 from the Fable worker's handover brief, one commit per step, hand off to inbox/interop.md
+- 2026-11-06 23:11 wS:p2Y (claude opus, synthesis): settle whether the original fee is exposed too, fold the three fee cap surveys into the team brief as a per deployment table, resolve the BTCPay disagreement
