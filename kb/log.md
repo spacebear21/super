@@ -56,3 +56,4 @@
 - 2026-11-06T18:25 wX:p7 seats: fix refute seat family diversity (both seats same model 44/58 last night); tests; hand-off, no merge
 - 2026-11-06T19:16 wX:p2 scheduler: drop withdrawn kimi-k3 and muse-spark-open from harness opencode.json, branch tff-models, merge to hub main
 - 2026-11-06T21:38 wX:p7 seats: design and build PR review stage (pre-merge audit of open PRs on active and watch projects), branch pr-review
+- 2026-11-06T21:39 wT:p1 triage: commit human's 3 new comments, apply all other Actions, hold F-0270 for 1.3, req-pj usage check, review cake_wallet PR 3363 against Cake findings
