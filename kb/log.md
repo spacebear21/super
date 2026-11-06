@@ -53,3 +53,4 @@
 - 2026-11-06 05:28 wT:p1 (triage): triage the 75 drafts of run 2026-11-06, priority projects first, plain-language decision sheet 2026-11-06-decisions.md folding in Q37 as one combined reading list
 - 2026-11-06 17:41 opencode run x4 (kimi-k3.1-pro, headless): interop matrix research: prior art, rust-payjoin test infrastructure, implementation drivability, scenario catalogue; outputs in the session scratchpad
 - 2026-11-06 18:10 wT:p1 (triage): commit the human's 17 inline comments, apply the implicit approvals and three direct answers, answer each comment with evidence in 2026-11-06-answers.md (PR 1971 and 1983 effects, bitcoin_uri issue 12, Unify, BitMask and Phobia dossiers, pjos claim, BIP78 compliance, Cake native bindings PR 3363, BlueWallet, Sparrow sighash)
+- 2026-11-06T18:25 wX:p7 seats: fix refute seat family diversity (both seats same model 44/58 last night); tests; hand-off, no merge
