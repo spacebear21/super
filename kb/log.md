@@ -44,3 +44,4 @@
 - 2026-11-06 00:51 wT:p1 (triage): apply the human's decision sheet answers (Q3 and Q13 case by case, Q9 park, Q10 exclude, Q35 reported, Q37 deferred, defaults elsewhere), fast-forward master before the 02:17 run
 - 2026-11-06 00:54 wX:p2 (scheduler): pressed Enter; the brief from 16:43 had sat unsubmitted in its input box for eight hours
 - 2026-11-06 03:07 wW:p4 (shell pane): bin/run.sh restarted by hand after the cron start failed on the missing key
+- 2026-11-06 03:08 wT:p1 (triage): brief for branch preflight (worktree ~/repos/payjoin-audit-preflight): abort the run when no primary model answers a preflight, never let Claude or Codex take a call with no primary candidate, disable a model on an auth failure
