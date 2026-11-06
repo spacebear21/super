@@ -57,3 +57,4 @@
 - 2026-11-06T19:16 wX:p2 scheduler: drop withdrawn kimi-k3 and muse-spark-open from harness opencode.json, branch tff-models, merge to hub main
 - 2026-11-06T21:38 wX:p7 seats: design and build PR review stage (pre-merge audit of open PRs on active and watch projects), branch pr-review
 - 2026-11-06T21:39 wT:p1 triage: commit human's 3 new comments, apply all other Actions, hold F-0270 for 1.3, req-pj usage check, review cake_wallet PR 3363 against Cake findings
+- 2026-11-06T21:46 wX:p8 interop: build wave 1a of the interop matrix in ~/repos/payjoin-interop (runner on payjoin-test-utils, driver contract, payjoin-cli reference, wave-1 scenarios, bdk-cli, version skew, bitcoinjs, results page, run.sh)
