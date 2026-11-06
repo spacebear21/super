@@ -71,3 +71,4 @@
 - 2026-11-06 23:15 w11:p1 (opencode glm-5.3, board): build the Priorities board on the phone dashboard from ~/super/board.json, branch board in ~/repos/harness-board
 - 2026-11-06 23:23 wT:p8 (claude opus, interop-build): same interop brief, replacing the glm-5.3 agent (no commits, four uncommitted files to triage)
 - 2026-11-06 23:23 w11:p1 (claude opus, board): same dashboard board brief, replacing the glm-5.3 agent (nothing built)
+- 2026-11-06 23:26 wT:p9 (codex, pr-fixes): apply the five PR-review trial fixes plus two registry changes on branch pr-review, hand off to inbox/pr-review.md

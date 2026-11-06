@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:24:03Z",
+  "updated": "2026-11-06T23:26:41Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -30,9 +30,10 @@
       "title": "Pre-merge PR review stage",
       "status": "building",
       "priority": 2,
-      "owner": "seats wT:p7",
+      "owner": "pr-fixes wT:p9 (Codex)",
       "since": "2026-11-06",
-      "next": "Trial on Cake PR 3363 finishes; fix list to an OpenCode agent; merge with cap 5"
+      "next": "Codex applies the trial fixes; then merge with cap 5 for the first night",
+      "worker": "trial found the v1 panic, missed two items for want of a class, raised four new defects"
     },
     {
       "id": "audit-nightly",
@@ -53,7 +54,7 @@
       "owner": "human",
       "since": "2026-11-06",
       "next": "Post the comment",
-      "needs": "Comment text at the end of reports/triage/2026-11-06-cake-pr-3363.md on payjoin-audit master"
+      "needs": "Comment text at the end of reports/triage/2026-11-06-cake-pr-3363.md on payjoin-audit master; the stage found four more defects that follow as a second comment after its first real run"
     },
     {
       "id": "approved-batch",
@@ -107,6 +108,17 @@
       "since": "2026-11-06",
       "next": "Pick which of the four changes to start",
       "needs": "Say which of items 1 to 3 to start"
+    },
+    {
+      "id": "receiver-fee-class",
+      "project": "payjoin-audit",
+      "title": "New class: receiver bounds the fee rate it accepts",
+      "status": "waiting-human",
+      "priority": 3,
+      "owner": "human",
+      "since": "2026-11-06",
+      "next": "Decide whether to add the class",
+      "needs": "Say yes to a receiver fee class (area fees, implementation and integration levels) so the Cake fee cap regression is checked by the stage"
     }
   ]
 }
