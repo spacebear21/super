@@ -49,3 +49,9 @@ A scheduled multi model audit of Payjoin implementations, in ~/repos/payjoin-aud
 - **The plan's order** is never-scanned and changed projects first (never-scanned ahead, by empty last date), then unchanged projects with new classes, cut at 80 tasks; rechecks are open findings on changed projects in registry order, cut at 40 with no severity priority.
 - **What a human verdict does downstream**: a terminal status (invalid, irrelevant, wontfix, duplicate, fixed) keeps the finding out of rechecks, makes its fingerprint a silent drop on re-discovery, and puts its status and reason text into every future audit prompt for that project as "do not re-raise". Retiring a class removes it from every scan and closes its open findings. Reasons that name the pattern generalize; "not a bug" does not.
 
+
+## Human answers to the 2026-11-05 decision sheet (partial, 2026-11-06)
+
+- camlcoin is a watch project, so none of its findings is worth reporting (Q9: park all). The six non-Payjoin projects are excluded (Q10). Class severities (Q3) and the needs_review confirmations (Q13) are decided case by case, not as a batch.
+- **BTCPay sender sighash gap (Q35): record as a medium finding.** The human already reported it to BTCPay Server and to the BIP78 authors Nicolas Dorier and Kukks by email on 2025-08-20; no reply and no action known. So its status is reported, not drafted, and the recheck stage should watch it.
+- Still waiting on the rest of the sheet; the reading list (Q37) and the command section were not understood and were re-explained in plain words.
