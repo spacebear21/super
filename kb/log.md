@@ -75,3 +75,4 @@
 - 2026-11-06 23:28 w11:p2 (claude opus, memory): build transcripts-index, super-dream (Fable headless pass from ~/super/dreaming.md), schedule entry, runbook; branch memory in ~/repos/harness-memory
 - 2026-11-06 23:29 w11:p1 (claude opus, board): add the progress record and the renderProject shadow fix, hand off again
 - 2026-11-06 23:40 w11:p2 (claude opus, memory): addendum: dream reviewed in the same job (runbook wording), add the interop matrix schedule entry at 04:45 UTC
+- 2026-11-06 23:51 dream/2026-11-06 reviewed: merged with fixes (holds restored, memory and deploy kept from main, two quotes re-marked checked, dates corrected); branch and worktree removed
