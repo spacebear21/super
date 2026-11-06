@@ -48,3 +48,4 @@
 - 2026-11-06 03:14 wT:p1 (triage): preflight branch, switch the minority guard to append the minority after the primaries on its seat (budget rule), own commit, new note
 - 2026-11-06 03:16 wT:p1 (triage): brief for branch watchdog off payjoin-audit master: rolling failure-rate watchdog that notifies and stops the run, minority fallbacks counted and notified, summary section
 - 2026-11-06 03:20 wX:p2 (scheduler): brief for branch scheduled-panes: scheduled tasks run in a Herdr pane via bin/schedule-run, dashboard opens pane-less headless runs with a command list and the task's log tail
+- 2026-11-06 03:23 wT:p1 (triage): watchdog tests leaked a note into the live inbox; inbox path must be a parameter, tests use a temp dir
