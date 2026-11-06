@@ -46,3 +46,4 @@
 - 2026-11-06 03:07 wW:p4 (shell pane): bin/run.sh restarted by hand after the cron start failed on the missing key
 - 2026-11-06 03:08 wT:p1 (triage): brief for branch preflight (worktree ~/repos/payjoin-audit-preflight): abort the run when no primary model answers a preflight, never let Claude or Codex take a call with no primary candidate, disable a model on an auth failure
 - 2026-11-06 03:14 wT:p1 (triage): preflight branch, switch the minority guard to append the minority after the primaries on its seat (budget rule), own commit, new note
+- 2026-11-06 03:16 wT:p1 (triage): brief for branch watchdog off payjoin-audit master: rolling failure-rate watchdog that notifies and stops the run, minority fallbacks counted and notified, summary section
