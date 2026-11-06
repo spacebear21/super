@@ -1,6 +1,6 @@
 # State
 
-Last rewritten: 2026-11-05 (after the human posted PR 2023 and PR 1971)
+Last rewritten: 2026-11-06 (after PR 1971 merged)
 
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
@@ -11,7 +11,7 @@ Last rewritten: 2026-11-05 (after the human posted PR 2023 and PR 1971)
 ## rust-payjoin
 
 - Native FFI builds PR 2023: done on this box. The human force pushed native-build-6 (both Dart build modes, prebuilt default and source for Bull's F-Droid plan) to the PR head and replaced the description on 2026-11-05. Waiting on upstream review. The phase2 worker (wS:pP, idle) has nothing pending and can be released.
-- Receiver settlement PR 1971 review: ACKed. The human posted the stale-flow reply and the ACK with four non-blocking follow-ups on 2026-11-05. Waiting on the maintainer to merge or on the author to answer the follow-ups; the reviewer (wS:pH, idle) and worktree ~/repos/rust-payjoin-review-1971 stay for that.
+- Receiver settlement PR 1971: merged on 2026-11-06 as reviewed; the follow-ups live in upstream issue 2034. Optional for the human: post the reviewer's comment adding the one follow-up the issue misses (the SessionStatus rustdoc caveat), draft at ~/review-drafts/payjoin-1971/draft-issue-2034-completed.md. The reviewer (wS:pH) removed its worktree and PR branches and is finished.
 - witness_utxo fee fix (wS:pR, idle): two finished commits on a local branch (reject contradicting UTXO data; require the previous transaction on receiver inputs unless the sender's taproot signing covers amounts). The human rejected this shape on 2026-11-05 (breaks honest Bull and Cake receivers; severity does not justify it), moved the private PR to draft; the worker was told to stand down.
 - Rethink complete: synthesis.md, fundamentals.md, eight discovery reports and experiment-taproot-amount.md under ~/review-drafts/untrusted-inputs/ (backups in untrusted-inputs-backup). Conclusions filed in projects/rust-payjoin.md. Waiting on the human's decision on the path (the synthesis's universal fixes plus accepting the bounded residual) and on asking Bull whether their exchange sending wallet signs taproot. The seven rethink agents (fundamentals, synthesis, discovery-a to e in wS tabs tX and tY; discovery-c still running on kimi-k3) and the worktree ~/repos/rust-payjoin-untrusted-inputs stay until the human is done with the reports; then release them.
 - Decision context from the other finished wS workers (fallback_tx review, security audit) is filed in projects/rust-payjoin.md.
@@ -19,7 +19,7 @@ Last rewritten: 2026-11-05 (after the human posted PR 2023 and PR 1971)
 
 ## ldk-node
 
-- Three opencode workers done in tab wS:t8: ChannelMonitor output tracking, funding candidate conflicts, Node wallet transaction classification. Not yet reviewed by super.
+- The three opencode research workers (ChannelMonitor output tracking, funding candidate conflicts, Node wallet transaction classification) were closed by the 1971 reviewer on 2026-11-06; their reports stay in ~/review-drafts/ldk-research/. Not yet reviewed by super.
 
 ## harness
 
