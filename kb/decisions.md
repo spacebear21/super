@@ -24,3 +24,5 @@
 - **The reading list is decided after the audit has covered the important projects**, not before: SatoshiPortal/payjoin, Bull mobile and the BTCPay async plugin first.
 
 - **No silent fallback to expensive models, and guard rails on the failure rate** (human, 2026-11-06, after the keyless cron run spent 47 minutes on Claude and Codex): "we should definitely have guard rails if like 90% of calls are failing. at the very least a notification. we don't want to be falling back silently to more expensive models." So: a run that is mostly failing notifies and stops; every call a minority model answers because the primaries could not is counted, logged and shown in the summary, and a notification goes out when it happens at all.
+
+- **Discovery and candidate triage do not gate the scan** (human, 2026-11-06). No pre-filter for candidates: the strong triage of noisy candidates is fine as long as the plan and the audit start at once from the registry as it stands, and triaged projects enter the registry for the next run. The human: "i dont even think we need the pre filter triage if we don't block the rest of the scan."
