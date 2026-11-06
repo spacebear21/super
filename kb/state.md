@@ -30,11 +30,11 @@ Last rewritten: 2026-11-06 (after the second sheet's answers)
 
 - The three opencode research workers (ChannelMonitor output tracking, funding candidate conflicts, Node wallet transaction classification) were closed by the 1971 reviewer on 2026-11-06; their reports stay in ~/review-drafts/ldk-research/. Not yet reviewed by super.
 
-- Workspaces (human, 2026-11-06): one per repo. wT payjoin-audit holds the interop build (wT:p8) and the PR-review stage build (wT:p7); the triage worker is released; wX harness is empty of workers until harness work starts; wS rust-payjoin keeps the rethink agents until the human is done with their reports.
+- Workspaces (human, 2026-11-06): one per repo. wT payjoin-audit holds the interop build (wT:p8) and the PR-review stage build (wT:p7); the triage worker is released; w11 harness holds the dashboard board build (w11:p1); wS rust-payjoin keeps the rethink agents until the human is done with their reports.
 
 ## harness
 
-- Dashboard board (, name board, OpenCode on glm-5.3, working): branch board in ~/repos/harness-board shows ~/super/board.json as a Priorities section on home and per project, read only, with unittest coverage; goes live on a push to the hub's main and the deploy. The board file itself is written by the super agent with every state change (rule in CLAUDE.md).
+- Dashboard board (w11:p1, name board, OpenCode on glm-5.3, working): branch board in ~/repos/harness-board shows ~/super/board.json as a Priorities section on home and per project, read only, with unittest coverage; goes live on a push to the hub's main and the deploy. The board file itself is written by the super agent with every state change (rule in CLAUDE.md).
 
 - Hub is the bare repo ~/repos/harness.git, main at cece2c4. Workspace wV and its worker are gone; the super agent now sits in workspace wW (label super) as wW:p1. Harness work goes in workspace wX (label harness).
 - super-watch stale note fix: done, merged into hub main and live. Worker and worktree released on 2026-11-06; branch stays for the human to fetch.
