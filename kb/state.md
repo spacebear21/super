@@ -1,6 +1,6 @@
 # State
 
-Last rewritten: 2026-11-06 (after PR 1971 merged)
+Last rewritten: 2026-11-06 (after the second sheet's answers)
 
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
@@ -10,7 +10,7 @@ Last rewritten: 2026-11-06 (after PR 1971 merged)
 - Registry is clean (0 problems) after the merge fix: duplicate BTCPay projects folded, 11 findings found twice folded into the lower ids (their drafts remain under reports/drafts with the old project id in the name), Bull's exchange entries active.
 - Cron runs bin/run.sh at 02:17 UTC nightly; the flock makes overlap safe. Worth checking the next morning: the Refusals section and the model table of reports/runs/<date>/summary.md, and whether kimi-k3.1-pro's stray close token broke any JSON.
 - Triage decisions applied: payjoin-audit master at 1c857de (00:55 UTC 2026-11-06), before the 02:17 run. 283 classes active (19 retired by the sheet), 45 active projects, 141 drafts still drafted (27 rust-payjoin), 38 duplicates folded, camlcoin's 55 parked, F-0251 (BTCPay sender sighash) recorded as reported by email 2025-08-20. Q37, the reading list, is revisited after the run has covered SatoshiPortal/payjoin, Bull mobile and the BTCPay async plugin; the triage worker (wT:p1, idle) keeps its branch for that.
-- Second decision sheet ready (wT:p1, triage, idle): branch triage at 378465f on master 2143d05, reports/triage/2026-11-06-decisions.md, 11 questions: Q1-3 the priority projects' drafts one verdict line each, Q4 the combined reading list across both runs (35 rows, 33 send, 1 hold), Q5-11 patterns, classes and duplicates, a refuter paragraph, a verifier appendix (37 of 75 done). Pasted to the human. Waiting on answers; then the worker applies them and the send batch becomes the human's reports to write and send.
+- Second sheet answered (wT:p1, triage, idle): the human's 17 inline comments are committed verbatim, the implicit approvals applied (branch triage, head 0e2b533 on master 2143d05; F-0221 reported out of band, F-0256 invalid, 23 reading-list findings approved for sending but still drafted until the reports go out). reports/triage/2026-11-06-answers.md answers each comment; the worker proposed one action per answered comment (send as is, drop, re-address, hold) and waits for the human's word on the lot or on single lines. Dossiers written for Unify, BitMask and Phobia. The sheet's commented rows and F-0298/F-0317 severity changes are held until then. Tonight's 02:17 run picks up master c73e3ba: the refute seat fix (seats branch, merged fast-forward) so the two refute seats come from two families; worth checking in the morning log: the line "shares its family with another seat" and refute wall clock. Performance breakdown of the 2026-11-06 run given to the human; lessons filed in projects/payjoin-audit.md.
 ## payjoin-interop (exploration, human asked 2026-11-06)
 
 - The human wants an interoperability matrix between Payjoin implementations, kept up to date. Four Token Factory research agents are running (prior art, reusable rust-payjoin test infrastructure, which implementations can be driven headlessly, the scenario catalogue); super writes the design proposal into kb/projects/payjoin-interop.md from their reports and presents it. Nothing built yet.
