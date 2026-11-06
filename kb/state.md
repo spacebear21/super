@@ -34,7 +34,9 @@ Last rewritten: 2026-11-06 (after the second sheet's answers)
 
 ## harness
 
-- Dashboard board (w11:p1, name board, Claude Opus, working): branch board in ~/repos/harness-board shows ~/super/board.json as a Priorities section on home and per project, read only, with unittest coverage; goes live on a push to the hub's main and the deploy. The board file itself is written by the super agent with every state change (rule in CLAUDE.md).
+- Memory (w11:p2, name memory, Claude Opus, working): branch memory in ~/repos/harness-memory builds transcripts-index (qmd collection transcripts), super-dream (headless Fable pass from ~/super/dreaming.md on a dream/<date> branch of a ~/super worktree, note to inbox/dream.md), a 05:30 UTC schedule entry and the runbook. The super agent reshapes kb into index pages plus kb/topics/ itself.
+
+- Dashboard board (w11:p1, name board, Claude Opus): built on branch board (head 743c3ee plus a progress record and a one line project view fix coming), 14 tests; then merge into the hub's main, which makes it live on the box. Shows ~/super/board.json as a Priorities section on home and per project, read only, with unittest coverage; goes live on a push to the hub's main and the deploy. The board file itself is written by the super agent with every state change (rule in CLAUDE.md).
 
 - Hub is the bare repo ~/repos/harness.git, main at cece2c4. Workspace wV and its worker are gone; the super agent now sits in workspace wW (label super) as wW:p1. Harness work goes in workspace wX (label harness).
 - super-watch stale note fix: done, merged into hub main and live. Worker and worktree released on 2026-11-06; branch stays for the human to fetch.

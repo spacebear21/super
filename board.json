@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:26:41Z",
+  "updated": "2026-11-06T23:29:36Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -99,17 +99,6 @@
       "next": "Upstream review"
     },
     {
-      "id": "memory-dreaming",
-      "project": "super",
-      "title": "Memory: dreaming pass, transcript index, topic pages",
-      "status": "proposed",
-      "priority": 3,
-      "owner": "human",
-      "since": "2026-11-06",
-      "next": "Pick which of the four changes to start",
-      "needs": "Say which of items 1 to 3 to start"
-    },
-    {
       "id": "receiver-fee-class",
       "project": "payjoin-audit",
       "title": "New class: receiver bounds the fee rate it accepts",
@@ -119,6 +108,26 @@
       "since": "2026-11-06",
       "next": "Decide whether to add the class",
       "needs": "Say yes to a receiver fee class (area fees, implementation and integration levels) so the Cake fee cap regression is checked by the stage"
+    },
+    {
+      "id": "dashboard-board",
+      "project": "harness",
+      "title": "Priorities board on the phone dashboard",
+      "status": "building",
+      "priority": 2,
+      "owner": "board w11:p1 (Opus)",
+      "since": "2026-11-06",
+      "next": "Progress record and one fix, then merge to the hub's main, which makes it live on the box"
+    },
+    {
+      "id": "memory-dreaming",
+      "project": "super",
+      "title": "Memory: dreaming pass, transcript index, topic pages",
+      "status": "building",
+      "priority": 2,
+      "owner": "memory w11:p2 (Opus); super for the topic pages",
+      "since": "2026-11-06",
+      "next": "transcripts-index, super-dream, schedule entry, runbook; super reshapes kb into topic pages"
     }
   ]
 }
