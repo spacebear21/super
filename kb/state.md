@@ -4,7 +4,7 @@ Last rewritten: 2026-11-06 (after PR 1971 merged)
 
 ## payjoin-audit (scheduled multi model audit of Payjoin implementations)
 
-- Tonight's run (02:17 UTC 2026-11-06) has SatoshiPortal/payjoin as the priority: 8 tasks over 50 classes, in the never-scanned group that the planner runs first. Check its drafts in the morning first.
+- Run 2026-11-06 started 02:17:01 UTC on the new config (master 1c857de), discovery calls out, no backend errors; a background watcher wakes super when the log's done line appears (or at 16:00 UTC if not). First thing after: SatoshiPortal/payjoin, Bull mobile and BTCPay async plugin drafts to the human, the refuters' rejected list, kimi-k3.1-pro's measured speed into config, then revisit the reading list (Q37).
 - The 2026-11-05 full run finished at 20:20 UTC and committed on master. 231 new drafts under reports/drafts (6 critical, 46 high, 95 medium, 76 low, 9 info) plus the 18 earlier ones await the human's review; 150 projects were added by triage (registry now 469). The refute stage ran mostly on nemotron-3-ultra (465 calls) because this run still ordered by speed; the capability ordering and kimi-k3.1-pro apply from the next run. Zero refusals in about 700 censored-model calls. kimi-k3 was disabled mid run after repeated failures.
 - Registry is clean (0 problems) after the merge fix: duplicate BTCPay projects folded, 11 findings found twice folded into the lower ids (their drafts remain under reports/drafts with the old project id in the name), Bull's exchange entries active.
 - Cron runs bin/run.sh at 02:17 UTC nightly; the flock makes overlap safe. Worth checking the next morning: the Refusals section and the model table of reports/runs/<date>/summary.md, and whether kimi-k3.1-pro's stray close token broke any JSON.
