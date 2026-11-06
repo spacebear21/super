@@ -51,3 +51,4 @@
 - 2026-11-06 03:23 wT:p1 (triage): watchdog tests leaked a note into the live inbox; inbox path must be a parameter, tests use a temp dir
 - 2026-11-06 03:36 wT:p1 (triage): brief for branch unblock-discovery off payjoin-audit master: plan and audit start at once; discovery and candidate triage run alongside and only feed the next run
 - 2026-11-06 05:28 wT:p1 (triage): triage the 75 drafts of run 2026-11-06, priority projects first, plain-language decision sheet 2026-11-06-decisions.md folding in Q37 as one combined reading list
+- 2026-11-06 17:41 opencode run x4 (kimi-k3.1-pro, headless): interop matrix research: prior art, rust-payjoin test infrastructure, implementation drivability, scenario catalogue; outputs in the session scratchpad
