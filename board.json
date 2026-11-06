@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:57:28Z",
+  "updated": "2026-11-06T23:58:17Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -126,7 +126,7 @@
       "title": "Dashboard: Tasks and Agents as their own pages",
       "status": "building",
       "priority": 2,
-      "owner": "tasks  (Opus)",
+      "owner": "tasks w12:p1 (Opus)",
       "since": "2026-11-06",
       "next": "Home keeps the chat and a nav row; Tasks (the board) and Agents move to their own pages; then merge to the hub's main"
     }
