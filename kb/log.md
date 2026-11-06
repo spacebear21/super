@@ -40,3 +40,4 @@
 - 2026-11-05 21:16 wT:p1: stop spawning Claude subagents for the triage; use findings.json and opencode headless calls instead
 - 2026-11-05 23:35 wT:p1 (triage): brief for a decision sheet reports/triage/2026-11-05-decisions.md on branch triage: numbered questions with recommended defaults for class, project, severity, finding and reading-list verdicts, plus a question to command map
 - 2026-11-05 23:59 wT:p1 (triage): redo the decision sheet in plain words (substance in the question, ids only as a trailing reference, merged questions, 40 to 50 total) after the human sent it back
+- 2026-11-06 00:02 wT:p1 (triage): told it Q33 and the satoshiportal and bull-mobile part of Q34 are already on master (SatoshiPortal/payjoin is tonight's priority), so the sheet should mark them applied
