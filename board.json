@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:29:36Z",
+  "updated": "2026-11-06T23:32:21Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -28,12 +28,12 @@
       "id": "pr-review-stage",
       "project": "payjoin-audit",
       "title": "Pre-merge PR review stage",
-      "status": "building",
+      "status": "done",
       "priority": 2,
-      "owner": "pr-fixes wT:p9 (Codex)",
+      "owner": "super",
       "since": "2026-11-06",
-      "next": "Codex applies the trial fixes; then merge with cap 5 for the first night",
-      "worker": "trial found the v1 panic, missed two items for want of a class, raised four new defects"
+      "next": "First nightly run at 02:17 UTC with cap 5; read reports/drafts/pr/ in the morning",
+      "worker": "merged to master"
     },
     {
       "id": "audit-nightly",
@@ -43,7 +43,7 @@
       "priority": 2,
       "owner": "cron",
       "since": "2026-11-06",
-      "next": "Morning check: seat family line, refute wall clock, glm-5.3 leading"
+      "next": "Morning check: seat family line, refute wall clock, glm-5.3 leading, and the first PR review drafts under reports/drafts/pr/"
     },
     {
       "id": "cake-pr-3363",
@@ -113,11 +113,11 @@
       "id": "dashboard-board",
       "project": "harness",
       "title": "Priorities board on the phone dashboard",
-      "status": "building",
+      "status": "done",
       "priority": 2,
-      "owner": "board w11:p1 (Opus)",
+      "owner": "super",
       "since": "2026-11-06",
-      "next": "Progress record and one fix, then merge to the hub's main, which makes it live on the box"
+      "next": "Live on the box through the hub; the laptop deploy carries it to a rebuilt image"
     },
     {
       "id": "memory-dreaming",
