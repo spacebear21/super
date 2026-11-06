@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:48:45Z",
+  "updated": "2026-11-06T23:49:12Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -76,7 +76,7 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main (now 5101115 board plus memory e75f670), workhorse-deploy.sh outside the 02:17 window; super repo on GitHub with a PAT; /login"
+      "needs": "Pull hub main (32cb714: board and memory), workhorse-deploy.sh outside the 02:17 window; super repo on GitHub with a PAT; /login"
     },
     {
       "id": "pr-1971",
