@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:32:21Z",
+  "updated": "2026-11-06T23:50:00Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -76,27 +76,17 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main, workhorse-deploy.sh; super repo on GitHub with a PAT; /login"
-    },
-    {
-      "id": "pr-1971",
-      "project": "rust-payjoin",
-      "title": "Receiver settlement PR 1971",
-      "status": "waiting-external",
-      "priority": 3,
-      "owner": "upstream",
-      "since": "2026-11-05",
-      "next": "Maintainer merges or the author answers the four follow-ups"
+      "needs": "Fetch hub main on the laptop, run infra/scripts/workhorse-deploy.sh outside the 02:17 UTC window; /login before it expires; decide whether payjoin-audit gets a GitHub repository for the schedule"
     },
     {
       "id": "native-ffi-2023",
       "project": "rust-payjoin",
       "title": "Native FFI builds PR 2023",
-      "status": "waiting-external",
+      "status": "done",
       "priority": 3,
       "owner": "upstream",
-      "since": "2026-11-05",
-      "next": "Upstream review"
+      "since": "2026-11-06",
+      "next": "Merged upstream 2026-11-06; Bull can drop their fork"
     },
     {
       "id": "receiver-fee-class",
@@ -127,7 +117,7 @@
       "priority": 2,
       "owner": "memory w11:p2 (Opus); super for the topic pages",
       "since": "2026-11-06",
-      "next": "transcripts-index, super-dream, schedule entry, runbook; super reshapes kb into topic pages"
+      "next": "Runbook commit and hand-off from the memory worker, then merge branch memory into hub main; super reshapes kb into topic pages"
     }
   ]
 }
