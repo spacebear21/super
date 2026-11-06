@@ -63,3 +63,4 @@
 - 2026-11-06 22:11 wT:p6 (claude, interop): nudge after the usage limit, continue the registry loader on branch interop, check git status first
 - 2026-11-06 22:14 wS:p2Y (claude, synthesis): write the team brief on the witness_utxo fee issue with the proposed phased path, fold in the 2.0 Coin design, rewrite the 2.0 report's phase 1 to the softened rule; hand off to inbox/untrusted-inputs.md
 - 2026-11-06 22:40 wS:p2Z/p20/p31 (opencode glm-5.3, fee-a/b/c): survey how each shipping payjoin sender bounds the additional fee a receiver can take (max_additional_fee_contribution and equivalents), code plus web, reports under ~/review-drafts/untrusted-inputs/fee-survey/
+- 2026-11-06 22:47 wT:p1 (claude, triage): file the two payjoin-cli 1.0.0 crashes found by the interop matrix as rust-payjoin findings with drafts, on branch triage
