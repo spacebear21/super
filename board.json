@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T23:49:12Z",
+  "updated": "2026-11-06T23:51:05Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -76,27 +76,17 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main (32cb714: board and memory), workhorse-deploy.sh outside the 02:17 window; super repo on GitHub with a PAT; /login"
-    },
-    {
-      "id": "pr-1971",
-      "project": "rust-payjoin",
-      "title": "Receiver settlement PR 1971",
-      "status": "waiting-external",
-      "priority": 3,
-      "owner": "upstream",
-      "since": "2026-11-05",
-      "next": "Maintainer merges or the author answers the four follow-ups"
+      "needs": "Pull hub main (32cb714: board and memory), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login"
     },
     {
       "id": "native-ffi-2023",
       "project": "rust-payjoin",
       "title": "Native FFI builds PR 2023",
-      "status": "waiting-external",
+      "status": "done",
       "priority": 3,
       "owner": "upstream",
-      "since": "2026-11-05",
-      "next": "Upstream review"
+      "since": "2026-11-06",
+      "next": "Merged upstream 2026-11-06 20:29 UTC"
     },
     {
       "id": "receiver-fee-class",
