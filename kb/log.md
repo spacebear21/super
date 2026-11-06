@@ -72,3 +72,4 @@
 - 2026-11-06 23:23 wT:p8 (claude opus, interop-build): same interop brief, replacing the glm-5.3 agent (no commits, four uncommitted files to triage)
 - 2026-11-06 23:23 w11:p1 (claude opus, board): same dashboard board brief, replacing the glm-5.3 agent (nothing built)
 - 2026-11-06 23:26 wT:p9 (codex, pr-fixes): apply the five PR-review trial fixes plus two registry changes on branch pr-review, hand off to inbox/pr-review.md
+- 2026-11-06 23:28 w11:p2 (claude opus, memory): build transcripts-index, super-dream (Fable headless pass from ~/super/dreaming.md), schedule entry, runbook; branch memory in ~/repos/harness-memory
