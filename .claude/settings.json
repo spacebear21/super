@@ -7,7 +7,29 @@
           {
             "type": "command",
             "command": "umask 077; d=\"$HOME/.local/state/super-watch\"; mkdir -p \"$d\" && if [ -n \"$CLAUDE_CODE_MESSAGING_SOCKET\" ] && [ -n \"$CLAUDE_CODE_MESSAGING_TOKEN\" ]; then printf '%s\\n%s\\n' \"$CLAUDE_CODE_MESSAGING_SOCKET\" \"$CLAUDE_CODE_MESSAGING_TOKEN\" > \"$d/inbox-socket.tmp\" && mv -f \"$d/inbox-socket.tmp\" \"$d/inbox-socket\"; else rm -f \"$d/inbox-socket\"; fi >/dev/null 2>&1; exit 0",
-            "timeout": 5
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "umask 077; d=\"$HOME/.local/state/super-watch\"; mkdir -p \"$d\" && if [ -n \"$CLAUDE_CODE_MESSAGING_SOCKET\" ] && [ -n \"$CLAUDE_CODE_MESSAGING_TOKEN\" ]; then printf '%s\\n%s\\n' \"$CLAUDE_CODE_MESSAGING_SOCKET\" \"$CLAUDE_CODE_MESSAGING_TOKEN\" > \"$d/inbox-socket.tmp\" && mv -f \"$d/inbox-socket.tmp\" \"$d/inbox-socket\"; fi >/dev/null 2>&1; exit 0",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "umask 077; d=\"$HOME/.local/state/super-watch\"; mkdir -p \"$d\" && if [ -n \"$CLAUDE_CODE_MESSAGING_SOCKET\" ] && [ -n \"$CLAUDE_CODE_MESSAGING_TOKEN\" ]; then printf '%s\\n%s\\n' \"$CLAUDE_CODE_MESSAGING_SOCKET\" \"$CLAUDE_CODE_MESSAGING_TOKEN\" > \"$d/inbox-socket.tmp\" && mv -f \"$d/inbox-socket.tmp\" \"$d/inbox-socket\"; fi >/dev/null 2>&1; exit 0",
+            "timeout": 30
           }
         ]
       }
