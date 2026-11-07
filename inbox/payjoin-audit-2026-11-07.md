@@ -17,3 +17,7 @@
 
 refute rust-payjoin-090f69-bip78-receiver-prepare-psbt-cl-PsbtContext::prepare-seat0: codex:default answered after opencode:tff/glm-5.3-uncensored-fp8 failed.
 
+## 2026-11-07 07:57:11 UTC: 37 new draft(s) await review
+
+Run 2026-11-07 wrote 37 draft(s). See reports/runs/2026-11-07/summary.md.
+
