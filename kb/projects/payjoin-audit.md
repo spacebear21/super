@@ -26,6 +26,7 @@ A scheduled multi model audit of Payjoin implementations, in ~/repos/payjoin-aud
 
 ## Process
 
+- The 02:17 UTC start was never chosen for a reason: the first audit session (2026-11-04) proposed "around 02:15 UTC" for an overnight run and wrote 02:17 into the config, an off the hour minute by habit; the human agreed to cron, not to the time [checked: transcript 15a8a837]. It is about 19:17 Pacific, early evening for the human, so the box is busy while they may still be working; the human asked why on 2026-11-07 and nothing was changed.
 - A run is bin/run.sh, from cron at 02:17 UTC or by hand; a lock keeps the two from overlapping. The log under ~/.cache/payjoin-audit/logs and the model table in the run summary are where to look when it seems slow.
 - After any pipeline change, kill the run and restart it under the same run name rather than waiting; it reuses what was logged.
 - 18 draft reports from the first limited run await the human's review.
