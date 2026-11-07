@@ -79,3 +79,4 @@
 - 2026-11-06 23:57w12:p1 (claude opus, tasks): move the board (renamed Tasks) and the agents list to their own dashboard pages with a nav row on home; branch tasks in ~/repos/harness-tasks
 - 2026-11-07 00:23 w13:p1 (claude opus, task-detail): task detail page with context markdown and an in-place reply that reaches the super agent prefixed with the task; branch task-detail
 - 2026-11-07 00:36 w13:p1 (claude opus, task-detail): add numbered lists and code fences to the task page renderer, hand off again
+- 2026-11-07 00:49 w14:p1 (claude opus, reply-feedback): after a task answer is confirmed, return to Tasks with an Answer sent notice and a client side answered mark on the row; branch reply-feedback
