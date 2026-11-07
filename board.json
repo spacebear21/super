@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T00:56:45Z",
+  "updated": "2026-11-07T05:40:00Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -189,6 +189,18 @@
       "worker": "",
       "next": "Built and tested on branch oc-isolate (712ec37); merges to master when tonight's run ends, which its note announces",
       "needs": ""
+    },
+    {
+      "id": "harness-cleanup",
+      "project": "harness",
+      "title": "Cleanup rules: worktrees, stale sessions, large temporary files",
+      "status": "waiting-human",
+      "priority": 2,
+      "owner": "human",
+      "since": "2026-11-07T03:19Z",
+      "next": "Say yes to the four proposed rules or change their thresholds; then an Opus worker builds the daily job, dry run first",
+      "needs": "You asked for cleanup rules at 03:13; the proposal (merged idle worktrees after 48 h, sessions indexed then compressed at 7 days and deleted at 30, call and scratch files after 7 days, audit clones shallow, nothing deleted while a job runs, dry run first) is in tasks/harness-cleanup.md",
+      "detail": "tasks/harness-cleanup.md"
     }
   ]
 }
