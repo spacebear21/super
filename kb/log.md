@@ -85,3 +85,4 @@
 - 2026-11-07T02:39Z wT:pB (oc-isolate, Codex): isolate each audit OpenCode call in its own XDG_DATA_HOME and classify OpenCode's database lock errors as local, not model failures; brief in scratchpad brief-oc-isolate.md.
 - 2026-11-07T02:49Z wT:pB (oc-isolate) released; branch oc-isolate 712ec37 waits for the run to end before merging.
 - 2026-11-07T05:39Z dream/2026-11-07 reviewed and merged (648c315); panes wT:p3 (stale label), wS:pB and wS:p11 (idle, work filed) released.
+- 2026-11-07T07:59Z wZ:p1 (triage, Opus): decision sheet for the 37 drafts of the 2026-11-07 run, dissent rescues and the five PR reviews; brief in scratchpad brief-triage-1107.md.

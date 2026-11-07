@@ -29,11 +29,12 @@
       "id": "audit-nightly",
       "project": "payjoin-audit",
       "title": "Nightly audit run 02:17 UTC",
-      "status": "waiting-external",
+      "status": "done",
       "priority": 2,
       "owner": "cron",
-      "since": "2026-11-07T02:39Z",
-      "next": "Running since 02:17 UTC from cron; one burst of OpenCode database lock errors at 02:35 (local, not the models); morning check of the summary and PR drafts"
+      "since": "2026-11-07T07:59Z",
+      "next": "First cron run done 02:17 to 07:57 UTC: 78 audit tasks, 31 findings accepted plus 5 PR review comments, 37 drafts; one OpenCode lock burst, three paid fallbacks",
+      "needs": ""
     },
     {
       "id": "cake-pr-3363",
@@ -151,12 +152,12 @@
       "id": "oc-isolate",
       "project": "payjoin-audit",
       "title": "Audit: isolate OpenCode calls from the shared database",
-      "status": "waiting-external",
+      "status": "done",
       "priority": 2,
       "owner": "super",
-      "since": "2026-11-07T02:49Z",
+      "since": "2026-11-07T07:59Z",
       "worker": "",
-      "next": "Built and tested on branch oc-isolate (712ec37); merges to master when tonight's run ends, which its note announces",
+      "next": "Merged to master after the run (8312854); first effect visible in tomorrow night's run",
       "needs": ""
     },
     {
@@ -170,6 +171,31 @@
       "next": "Say yes to the four proposed rules or change their thresholds; then an Opus worker builds the daily job, dry run first",
       "needs": "You asked for cleanup rules at 03:13; the proposal (merged idle worktrees after 48 h, sessions indexed then compressed at 7 days and deleted at 30, call and scratch files after 7 days, audit clones shallow, nothing deleted while a job runs, dry run first) is in tasks/harness-cleanup.md",
       "detail": "tasks/harness-cleanup.md"
+    },
+    {
+      "id": "triage-1107",
+      "project": "payjoin-audit",
+      "title": "Decision sheet for the 37 drafts of 2026-11-07",
+      "status": "building",
+      "priority": 1,
+      "owner": "super",
+      "since": "2026-11-07T07:59Z",
+      "worker": "wZ:p1 opus",
+      "next": "Opus reads the drafts against the clones and writes reports/triage/2026-11-07-decisions.md; then it comes to you with questions per project",
+      "needs": ""
+    },
+    {
+      "id": "kimi-abliterated",
+      "project": "payjoin-audit",
+      "title": "Drop kimi-k3-abliterated from the audit pool?",
+      "status": "waiting-human",
+      "priority": 3,
+      "owner": "human",
+      "since": "2026-11-07T07:59Z",
+      "worker": "",
+      "next": "Say yes and the model leaves the pool",
+      "needs": "Tonight kimi-k3-abliterated stalled on all 14 of its calls (timeouts of 300 to 1500 s), holding refute seats for up to 25 minutes each. You dropped kimi-k3 and muse-spark yourself on 2026-11-06, so this is your call: I recommend dropping it; the uncensored fallback is then glm-5.3-uncensored-fp8 and deepseek uncensored.",
+      "detail": "tasks/kimi-abliterated.md"
     }
   ]
 }
