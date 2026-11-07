@@ -170,14 +170,13 @@
       "id": "audit-backup",
       "project": "payjoin-audit",
       "title": "Back up the payjoin-audit repo on GitHub",
-      "status": "waiting-human",
+      "status": "waiting-external",
       "priority": 3,
       "owner": "human",
       "since": "2026-11-07T01:50Z",
-      "next": "Create the GitHub repo and add the remote",
-      "needs": "The audit repo has no remote and spacebear21/payjoin-audit does not exist on GitHub. Create it (private) so the box can push the audit repo like the super repo; tell me and I add the remote and the sync.",
-      "worker": "",
-      "detail": "tasks/audit-backup.md"
+      "next": "Human: a repo once the pipeline is stable; revisit after tonight's runs",
+      "needs": "",
+      "worker": ""
     }
   ]
 }
