@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T00:05:38Z",
+  "updated": "2026-11-07T00:24:28Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -12,7 +12,8 @@
       "since": "2026-11-06",
       "next": "Open the team discussion with the brief",
       "needs": "Read ~/review-drafts/untrusted-inputs/team-brief.md (section 6 is the new fee table) and take it to the advisory thread; ask Bull whether the exchange sender signs taproot",
-      "worker": "fee cap survey folded in; bound corrected to original fee plus contribution"
+      "worker": "fee cap survey folded in; bound corrected to original fee plus contribution",
+      "detail": "tasks/untrusted-inputs.md"
     },
     {
       "id": "interop-matrix",
@@ -54,7 +55,8 @@
       "owner": "human",
       "since": "2026-11-06",
       "next": "Post the comment",
-      "needs": "Comment text at the end of reports/triage/2026-11-06-cake-pr-3363.md on payjoin-audit master; the stage found four more defects that follow as a second comment after its first real run"
+      "needs": "Comment text at the end of reports/triage/2026-11-06-cake-pr-3363.md on payjoin-audit master; the stage found four more defects that follow as a second comment after its first real run",
+      "detail": "tasks/cake-pr-3363.md"
     },
     {
       "id": "approved-batch",
@@ -65,7 +67,8 @@
       "owner": "human",
       "since": "2026-11-06",
       "next": "Send the approved batch",
-      "needs": "F-0244, F-0305, F-0315, F-0225 with F-0200, Phobia F-0167 and F-0190, F-0008 to BlueWallet with F-0049 and F-0052, 23 reading list rows"
+      "needs": "F-0244, F-0305, F-0315, F-0225 with F-0200, Phobia F-0167 and F-0190, F-0008 to BlueWallet with F-0049 and F-0052, 23 reading list rows",
+      "detail": "tasks/approved-batch.md"
     },
     {
       "id": "deploy",
@@ -76,7 +79,8 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main (4a05365: board, memory jobs, Tasks and Agents pages), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login"
+      "needs": "Pull hub main (4a05365: board, memory jobs, Tasks and Agents pages), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login",
+      "detail": "tasks/deploy.md"
     },
     {
       "id": "native-ffi-2023",
@@ -97,7 +101,8 @@
       "owner": "human",
       "since": "2026-11-06",
       "next": "Decide whether to add the class",
-      "needs": "Say yes to a receiver fee class (area fees, implementation and integration levels) so the Cake fee cap regression is checked by the stage"
+      "needs": "Say yes to a receiver fee class (area fees, implementation and integration levels) so the Cake fee cap regression is checked by the stage",
+      "detail": "tasks/receiver-fee-class.md"
     },
     {
       "id": "dashboard-board",
@@ -118,7 +123,8 @@
       "owner": "human",
       "since": "2026-11-06",
       "next": "Decide the nightly turn cap; deploy carries the scripts into the image",
-      "needs": "Say the dream turn cap (150 is about $25 a night, 40 was $6.48); run the laptop deploy when convenient. The trial dream branch is under review now."
+      "needs": "Say the dream turn cap (150 is about $25 a night, 40 was $6.48); run the laptop deploy when convenient. The trial dream branch is under review now.",
+      "detail": "tasks/memory-dreaming.md"
     },
     {
       "id": "dashboard-tasks",
