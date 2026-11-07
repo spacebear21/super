@@ -57,7 +57,7 @@
       "owner": "human",
       "since": "2026-11-06",
       "next": "Send the approved batch",
-      "needs": "F-0244, F-0305, F-0315, F-0225 with F-0200, Phobia F-0167 and F-0190, F-0008 to BlueWallet with F-0049 and F-0052, 23 reading list rows",
+      "needs": "F-0244, F-0305, F-0315, F-0225 with F-0200, Phobia F-0167 and F-0190, F-0008 to BlueWallet with F-0049 and F-0052, 23 reading list rows. Note: the 2026-11-07 sheet asks to change the BlueWallet report (Q5) and fold two rust-payjoin items into the mailroom report (Q3) before these go out.",
       "detail": "tasks/approved-batch.md"
     },
     {
@@ -176,13 +176,14 @@
       "id": "triage-1107",
       "project": "payjoin-audit",
       "title": "Decision sheet for the 37 drafts of 2026-11-07",
-      "status": "building",
+      "status": "waiting-human",
       "priority": 1,
-      "owner": "super",
-      "since": "2026-11-07T07:59Z",
-      "worker": "wZ:p1 opus",
-      "next": "Opus reads the drafts against the clones and writes reports/triage/2026-11-07-decisions.md; then it comes to you with questions per project",
-      "needs": ""
+      "owner": "human",
+      "since": "2026-11-07T08:17Z",
+      "worker": "",
+      "next": "Answer the eleven questions; then a worker applies section F and updates the approved batch",
+      "needs": "Read tasks/triage-1107.md (eleven questions with recommendations) or the sheet reports/triage/2026-11-07-decisions.md on payjoin-audit master; answer \"approve all\" or name exceptions by number",
+      "detail": "tasks/triage-1107.md"
     },
     {
       "id": "kimi-abliterated",
@@ -196,6 +197,18 @@
       "next": "Say yes and the model leaves the pool",
       "needs": "Tonight kimi-k3-abliterated stalled on all 14 of its calls (timeouts of 300 to 1500 s), holding refute seats for up to 25 minutes each. You dropped kimi-k3 and muse-spark yourself on 2026-11-06, so this is your call: I recommend dropping it; the uncensored fallback is then glm-5.3-uncensored-fp8 and deepseek uncensored.",
       "detail": "tasks/kimi-abliterated.md"
+    },
+    {
+      "id": "run-hygiene",
+      "project": "payjoin-audit",
+      "title": "Audit: distinct refuters, clean clones, location dedupe",
+      "status": "building",
+      "priority": 2,
+      "owner": "super",
+      "since": "2026-11-07T08:17Z",
+      "worker": "wZ:p2 codex",
+      "next": "Codex fixes the four pipeline problems from the sheet on branch run-hygiene; merge and clean the clones before 02:17 UTC",
+      "needs": ""
     }
   ]
 }
