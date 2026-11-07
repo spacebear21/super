@@ -25,6 +25,7 @@ Last rewritten: 2026-11-06 23:50 UTC by the dreaming pass, each line against the
 
 ## harness
 
-- Task pages with in place answers: on the hub's main 66b16a9 (renderer covers numbered lists and code fences; an accepted answer returns to the list with an Answer sent notice and a client side answered mark that the super agent's next status change clears). Worker released; the harness workspace is closed. Dashboard pages: on the hub's main 4a05365, home is the conversation under a nav row with Tasks and Agents links, each list on its own page. Worker released.
-- Dashboard board: in hub main and live through the post-receive hook; worker released [checked: hub main log].
-- Workspaces by label: rust-payjoin wS, payjoin-audit wT, super wW, harness w11 (ids have changed before; the label is what the rule names) [checked: herdr workspace list].
+- Deployed 2026-11-07 01:16 UTC from the laptop: cron (audit 02:17, interop 04:45, dream 05:30 UTC), the memory scripts and the watcher run from the image [checked: crontab, /usr/local/bin]. Nothing in flight; the harness workspace is closed.
+- Super watcher: the socket file is rewritten on every super turn after the resume timeout found at the deploy; hub main 3e1d7e1, settings live in this repo [checked: hub main log].
+- Open: the audit repo has no GitHub remote (board item audit-backup, waiting on the human).
+- Workspaces by label: rust-payjoin wS, payjoin-audit wT, super wW; harness gets one per task and closes with it [checked: herdr workspace list].
