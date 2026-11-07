@@ -202,12 +202,12 @@
       "id": "run-hygiene",
       "project": "payjoin-audit",
       "title": "Audit: distinct refuters, clean clones, location dedupe",
-      "status": "building",
+      "status": "done",
       "priority": 2,
       "owner": "super",
-      "since": "2026-11-07T08:17Z",
-      "worker": "wZ:p2 codex",
-      "next": "Codex fixes the four pipeline problems from the sheet on branch run-hygiene; merge and clean the clones before 02:17 UTC",
+      "since": "2026-11-07T08:34Z",
+      "worker": "",
+      "next": "Merged to master (f3a2c80 on run-hygiene); one-off clone cleanup running; first effect in tonight's 02:17 run",
       "needs": ""
     }
   ]

@@ -88,3 +88,4 @@
 - 2026-11-07T07:59Z wZ:p1 (triage, Opus): decision sheet for the 37 drafts of the 2026-11-07 run, dissent rescues and the five PR reviews; brief in scratchpad brief-triage-1107.md.
 - 2026-11-07T08:17Z wZ:p2 (hygiene, Codex): distinct refuter models per finding, models must not write into clones plus a clean step, dedupe by file and line overlap, summary paths; brief in scratchpad brief-run-hygiene.md. Triage worker wZ:p1 released; sheet merged to master.
 - 2026-11-07T08:28Z wZ:p2 (hygiene): replace per-project serialization with a detached worktree per call; measure cost; amend the note.
+- 2026-11-07T08:34Z wZ:p2 (hygiene) released; run-hygiene merged to master; clean-clones running in the background with a note to come.
