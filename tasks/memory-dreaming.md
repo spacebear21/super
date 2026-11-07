@@ -8,8 +8,8 @@ From your reading of Anthropic's post on the components of agent memory (2026-11
 - The trial pass (40 turns, $6.48, ten minutes) made four commits; an Opus review found one real loss (a dropped holds list) and two wrong "unconfirmed" marks; merged with fixes.
 - The first topic page exists (`kb/topics/witness-utxo-fee-issue.md`); the pass continues the reshape.
 
-## What is asked
-A number for the nightly turn cap. 150 is about $25 a night at the trial's rate; 40 was $6.48 and ran out before the pass could review its own commits. I would start at 80.
+## Decided
+Turn cap 80 (you, 2026-11-07, from the task page). Set on the hub's main; the first scheduled pass runs at 05:30 UTC.
 
 ## Pointers
 Instructions the pass follows: `dreaming.md` in this repo. Harness runbook, Dreaming subsection.

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T00:38:33Z",
+  "updated": "2026-11-07T00:45:31Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -79,7 +79,7 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main (bed6fd0: board, memory jobs, Tasks and Agents pages, task pages with answers), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login",
+      "needs": "Pull hub main (the current head: board, memory jobs, Tasks and Agents pages, task pages with answers), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login",
       "detail": "tasks/deploy.md"
     },
     {
@@ -118,12 +118,11 @@
       "id": "memory-dreaming",
       "project": "super",
       "title": "Memory: dreaming pass, transcript index, topic pages",
-      "status": "waiting-human",
+      "status": "done",
       "priority": 2,
-      "owner": "human",
-      "since": "2026-11-06",
-      "next": "Decide the nightly turn cap; deploy carries the scripts into the image",
-      "needs": "Say the dream turn cap (150 is about $25 a night, 40 was $6.48); run the laptop deploy when convenient. The trial dream branch is under review now.",
+      "owner": "super",
+      "since": "2026-11-07",
+      "next": "Cap set to 80 turns on the hub main; first scheduled pass tonight at 05:30 UTC",
       "detail": "tasks/memory-dreaming.md"
     },
     {
