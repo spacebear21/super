@@ -4,7 +4,7 @@
 The harness image is built from the hub's main and deployed from your laptop. Until then, new scripts live only in worktrees and anything on the rootfs is lost at the next rebuild.
 
 ## What is on hub main since the last deploy
-- The phone dashboard: the Tasks board, the Tasks and Agents pages, and a task detail page with in place replies (being built now).
+- The phone dashboard: the Tasks board, the Tasks and Agents pages, and task pages with context and in place answers.
 - The memory jobs: `transcripts-index`, `super-dream`, and schedule entries for the dream (05:30 UTC) and the interop matrix (04:45 UTC).
 - Earlier: Token Factory model changes in the OpenCode config, the scheduler, super-watch fixes.
 
