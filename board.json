@@ -202,12 +202,12 @@
       "id": "run-hygiene",
       "project": "payjoin-audit",
       "title": "Audit: distinct refuters, clean clones, location dedupe",
-      "status": "building",
+      "status": "done",
       "priority": 2,
       "owner": "super",
-      "since": "2026-11-07T08:37Z",
-      "worker": "codex",
-      "next": "The clone cleanup died on an empty clone (50 of 386 still dirty) and the same step opens tonight's run; Codex makes it skip broken clones, then cleans the cache; merge before 02:17 UTC",
+      "since": "2026-11-07T08:43Z",
+      "worker": "",
+      "next": "All merged to master (dc23a4c); cache cleaned (381 clones, 4 empty ones skipped); first full effect in tonight's 02:17 run",
       "needs": ""
     }
   ]

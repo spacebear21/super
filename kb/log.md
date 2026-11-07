@@ -90,3 +90,4 @@
 - 2026-11-07T08:28Z wZ:p2 (hygiene): replace per-project serialization with a detached worktree per call; measure cost; amend the note.
 - 2026-11-07T08:34Z wZ:p2 (hygiene) released; run-hygiene merged to master; clean-clones running in the background with a note to come.
 - 2026-11-07T08:37Z w0:p1 (cleanskip, Codex): clone cleanup must skip broken or empty clones instead of aborting (it died on ltblightning-payjoin-rn and would kill tonight's run); then clean the live cache; brief in scratchpad brief-clean-skip.md.
+- 2026-11-07T08:43Z w0:p1 (cleanskip) released; clean-skip merged to master; cache clean.
