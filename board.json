@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T00:49:03Z",
+  "updated": "2026-11-07T00:56:45Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -79,7 +79,7 @@
       "owner": "human",
       "since": "2026-11-05",
       "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main (the current head: board, memory jobs, Tasks and Agents pages, task pages with answers), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login",
+      "needs": "Pull hub main (66b16a9: board, memory jobs, Tasks and Agents pages, task pages with answers and feedback, dream cap 80), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login",
       "detail": "tasks/deploy.md"
     },
     {
@@ -161,11 +161,11 @@
       "id": "dashboard-reply-feedback",
       "project": "harness",
       "title": "Dashboard: feedback after answering a task",
-      "status": "building",
+      "status": "done",
       "priority": 3,
-      "owner": "reply-feedback w14:p1 (Opus)",
+      "owner": "super",
       "since": "2026-11-07",
-      "next": "Back to Tasks on success with an Answer sent notice and an answered mark on the row; then merge to the hub's main"
+      "next": "Live on the phone; the deploy carries it into the image"
     }
   ]
 }
