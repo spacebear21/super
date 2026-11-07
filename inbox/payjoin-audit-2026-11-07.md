@@ -13,3 +13,7 @@
 | opencode:tff/kimi-k3.1-pro | 4 | 3 |
 | opencode:tff/nemotron-3-ultra | 15 | 2 |
 
+## 2026-11-07 04:16:59 UTC: fallback to codex:default
+
+refute rust-payjoin-090f69-bip78-receiver-prepare-psbt-cl-PsbtContext::prepare-seat0: codex:default answered after opencode:tff/glm-5.3-uncensored-fp8 failed.
+
