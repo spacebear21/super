@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T00:24:28Z",
+  "updated": "2026-11-07T00:35:40Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -19,11 +19,11 @@
       "id": "interop-matrix",
       "project": "payjoin-audit",
       "title": "Interop conformance matrix, deliverables 5 to 7",
-      "status": "building",
+      "status": "done",
       "priority": 2,
-      "owner": "interop-build wT:p8",
-      "since": "2026-11-06",
-      "next": "bdk-cli, payjoin-cli at three tags, bitcoinjs, results page, nightly script; then merge to master"
+      "owner": "super",
+      "since": "2026-11-07",
+      "next": "Merged to master 86d6888; nightly at 04:45 UTC from the harness cron; results under reports/interop/"
     },
     {
       "id": "pr-review-stage",
@@ -44,7 +44,7 @@
       "priority": 2,
       "owner": "cron",
       "since": "2026-11-06",
-      "next": "Morning check: seat family line, refute wall clock, glm-5.3 leading, and the first PR review drafts under reports/drafts/pr/"
+      "next": "Morning check: seat family line, refute wall clock, first PR review drafts under reports/drafts/pr/, first scheduled interop run (04:45) and dream (05:30)"
     },
     {
       "id": "cake-pr-3363",
@@ -135,6 +135,18 @@
       "owner": "super",
       "since": "2026-11-07",
       "next": "Live on the phone through the hub; the deploy carries it into the image"
+    },
+    {
+      "id": "bitcoinjs-utxo-fields",
+      "project": "rust-payjoin",
+      "title": "bitcoinjs rejects every rust-payjoin proposal (UTXO fields on sender inputs)",
+      "status": "waiting-human",
+      "priority": 2,
+      "owner": "human",
+      "since": "2026-11-07",
+      "next": "Decide whether to raise it, and against whom",
+      "needs": "Say whether to file it against rust-payjoin (BIP 78 text) or bitcoinjs (strictness); my recommendation is a low interop finding against rust-payjoin with both sides stated",
+      "detail": "tasks/bitcoinjs-utxo-fields.md"
     }
   ]
 }
