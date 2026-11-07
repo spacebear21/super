@@ -26,7 +26,7 @@ Last rewritten: 2026-11-06 23:50 UTC by the dreaming pass, each line against the
 
 ## harness
 
-- Dashboard pages: on the hub's main 4a05365, home is the conversation under a nav row with Tasks and Agents links, each list on its own page. Worker released.
+- Task pages with in place answers: on the hub's main af2f2d4; a renderer addition (numbered lists, code fences) is one more commit away (w13:p1, task-detail, Opus). Dashboard pages: on the hub's main 4a05365, home is the conversation under a nav row with Tasks and Agents links, each list on its own page. Worker released.
 - Memory: on the hub's main 32cb714 (transcripts-index, super-dream, schedule entries for the dream at 05:30 and the interop matrix at 04:45 UTC, runbook); scripts symlinked into ~/.local/bin until the deploy. The trial dream branch dream/2026-11-06 is under review by an Opus subagent; merge or reject follows. Open with the human: the nightly turn cap. The super agent reshapes kb into topic pages as it goes; the dream pass continues it. Worker released.
 - Dashboard board: in hub main and live through the post-receive hook; worker released [checked: hub main log].
 - Scheduler and scheduled panes: in hub main. Stopgap on the box until the image deploy: schedule-run and schedule-refresh hand-copied into /usr/local/bin, the hook given its schedule-refresh line by hand, the crontab holding only the rendered block, the hand-installed audit line gone [checked: hub docs/progress.md, crontab]. Side note from the scheduler worker: a tracked .pyc under infra/workhorse/dashboard was ignored since.

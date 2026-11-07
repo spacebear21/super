@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T00:35:40Z",
+  "updated": "2026-11-07T00:36:02Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -147,6 +147,16 @@
       "next": "Decide whether to raise it, and against whom",
       "needs": "Say whether to file it against rust-payjoin (BIP 78 text) or bitcoinjs (strictness); my recommendation is a low interop finding against rust-payjoin with both sides stated",
       "detail": "tasks/bitcoinjs-utxo-fields.md"
+    },
+    {
+      "id": "dashboard-task-detail",
+      "project": "harness",
+      "title": "Dashboard: task pages with context and in-place answers",
+      "status": "done",
+      "priority": 2,
+      "owner": "super",
+      "since": "2026-11-07",
+      "next": "Live on the phone; numbered lists and code fences in the renderer follow as one more commit"
     }
   ]
 }
