@@ -83,3 +83,4 @@
 - 2026-11-07T01:30Z wX:p1 (watch-hook, Opus): diagnose why the super SessionStart hook skipped Herdr's resume and make the super-watch socket file self-healing (hooks on every turn, watcher log); brief in scratchpad brief-watch-hook.md.
 - 2026-11-07T01:34Z wX:p1 (watch-hook) released; watch-hook merged to hub main 3e1d7e1, super settings copied live.
 - 2026-11-07T02:39Z wT:pB (oc-isolate, Codex): isolate each audit OpenCode call in its own XDG_DATA_HOME and classify OpenCode's database lock errors as local, not model failures; brief in scratchpad brief-oc-isolate.md.
+- 2026-11-07T02:49Z wT:pB (oc-isolate) released; branch oc-isolate 712ec37 waits for the run to end before merging.

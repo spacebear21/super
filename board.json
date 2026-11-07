@@ -182,12 +182,12 @@
       "id": "oc-isolate",
       "project": "payjoin-audit",
       "title": "Audit: isolate OpenCode calls from the shared database",
-      "status": "building",
+      "status": "waiting-external",
       "priority": 2,
       "owner": "super",
-      "since": "2026-11-07T02:39Z",
-      "worker": "wT:pB codex",
-      "next": "Codex builds per call data dirs and local error classification on branch oc-isolate; merge after tonight's run ends",
+      "since": "2026-11-07T02:49Z",
+      "worker": "",
+      "next": "Built and tested on branch oc-isolate (712ec37); merges to master when tonight's run ends, which its note announces",
       "needs": ""
     }
   ]
