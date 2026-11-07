@@ -22,8 +22,8 @@
       "status": "done",
       "priority": 2,
       "owner": "super",
-      "since": "2026-11-07",
-      "next": "Merged to master 86d6888; nightly at 04:45 UTC from the harness cron; results under reports/interop/"
+      "since": "2026-11-07T05:15Z",
+      "next": "First scheduled run 2026-11-07 04:45 UTC: 64 pass, 37 fail, 53 unsupported, no infra errors, 24 min alongside the audit; page at reports/interop/index.html"
     },
     {
       "id": "pr-review-stage",
