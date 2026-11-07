@@ -1,4 +1,8 @@
-# Payjoin interoperability matrix (design, 2026-11-06)
+# Payjoin interoperability matrix
+
+Status 2026-11-07: built, on payjoin-audit master, run nightly from the harness cron at 04:45 UTC after the audit; the first scheduled run completed on its own [checked: reports/interop/2026-11-07.json, crontab]. The design of 2026-11-06 follows, then what the build settled and what the runs taught. The matrix lives inside payjoin-audit by the human's decision (kb/decisions.md, 2026-11-06); participants are registry projects.
+
+## Design (2026-11-06)
 
 What the human asked for: a matrix that ensures maximum compatibility between Payjoin implementations and stays current. Research behind this: four Token Factory agents (prior art, rust-payjoin reusable infrastructure, implementation drivability, scenario catalogue); the prior-art agent was stopped and its subagents' notes salvaged; the drivability survey was still running when this was written and gets folded in later. Design choices and their reasons live here; the code, when built, documents itself.
 

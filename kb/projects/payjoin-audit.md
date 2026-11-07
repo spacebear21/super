@@ -2,6 +2,10 @@
 
 A scheduled multi model audit of Payjoin implementations, in ~/repos/payjoin-audit on master. Its README and CLAUDE.md say how it works and its standing rules; this file holds why it is the way it is.
 
+## Topic pages
+
+- [The interop conformance matrix](../topics/interop-matrix.md): why it is shaped like the QUIC interop runner, the reference pair, the scenarios, what the build settled and what each run taught.
+
 ## Decisions and their reasoning
 
 - **Model pool is the Token Factory family only** (human, 2026-11-05). The OpenCode Zen free tier was dropped: keyless and anonymised, the terms allow logging, and the models rotate or vanish. Claude and Codex stay as minority seats so a login or permission problem never blocks a run.
