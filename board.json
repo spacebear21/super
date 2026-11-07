@@ -74,13 +74,12 @@
       "id": "deploy",
       "project": "harness",
       "title": "Deploy hub main to the workhorse",
-      "status": "waiting-human",
+      "status": "done",
       "priority": 3,
       "owner": "human",
-      "since": "2026-11-05",
-      "next": "Run the deploy from the laptop outside the 02:17 window",
-      "needs": "Pull hub main (66b16a9: board, memory jobs, Tasks and Agents pages, task pages with answers and feedback, dream cap 80), workhorse-deploy.sh outside the 02:17 window; confirm the super-sync PAT is set in the image; spacebear21/payjoin-audit does not exist on GitHub yet, create it or point the remote elsewhere; /login",
-      "detail": "tasks/deploy.md"
+      "since": "2026-11-07T01:50Z",
+      "next": "Deployed 2026-11-07 01:16 UTC; cron, scripts and watcher verified from the box",
+      "needs": ""
     },
     {
       "id": "native-ffi-2023",
@@ -166,6 +165,19 @@
       "owner": "super",
       "since": "2026-11-07",
       "next": "Live on the phone; the deploy carries it into the image"
+    },
+    {
+      "id": "audit-backup",
+      "project": "payjoin-audit",
+      "title": "Back up the payjoin-audit repo on GitHub",
+      "status": "waiting-human",
+      "priority": 3,
+      "owner": "human",
+      "since": "2026-11-07T01:50Z",
+      "next": "Create the GitHub repo and add the remote",
+      "needs": "The audit repo has no remote and spacebear21/payjoin-audit does not exist on GitHub. Create it (private) so the box can push the audit repo like the super repo; tell me and I add the remote and the sync.",
+      "worker": "",
+      "detail": "tasks/audit-backup.md"
     }
   ]
 }
