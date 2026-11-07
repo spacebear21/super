@@ -43,8 +43,8 @@
       "status": "waiting-external",
       "priority": 2,
       "owner": "cron",
-      "since": "2026-11-06",
-      "next": "Morning check: seat family line, refute wall clock, first PR review drafts under reports/drafts/pr/, first scheduled interop run (04:45) and dream (05:30)"
+      "since": "2026-11-07T02:39Z",
+      "next": "Running since 02:17 UTC from cron; one burst of OpenCode database lock errors at 02:35 (local, not the models); morning check of the summary and PR drafts"
     },
     {
       "id": "cake-pr-3363",
@@ -177,6 +177,18 @@
       "next": "Human: a repo once the pipeline is stable; revisit after tonight's runs",
       "needs": "",
       "worker": ""
+    },
+    {
+      "id": "oc-isolate",
+      "project": "payjoin-audit",
+      "title": "Audit: isolate OpenCode calls from the shared database",
+      "status": "building",
+      "priority": 2,
+      "owner": "super",
+      "since": "2026-11-07T02:39Z",
+      "worker": "wT:pB codex",
+      "next": "Codex builds per call data dirs and local error classification on branch oc-isolate; merge after tonight's run ends",
+      "needs": ""
     }
   ]
 }

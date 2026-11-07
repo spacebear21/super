@@ -82,3 +82,4 @@
 - 2026-11-07 00:49 w14:p1 (claude opus, reply-feedback): after a task answer is confirmed, return to Tasks with an Answer sent notice and a client side answered mark on the row; branch reply-feedback
 - 2026-11-07T01:30Z wX:p1 (watch-hook, Opus): diagnose why the super SessionStart hook skipped Herdr's resume and make the super-watch socket file self-healing (hooks on every turn, watcher log); brief in scratchpad brief-watch-hook.md.
 - 2026-11-07T01:34Z wX:p1 (watch-hook) released; watch-hook merged to hub main 3e1d7e1, super settings copied live.
+- 2026-11-07T02:39Z wT:pB (oc-isolate, Codex): isolate each audit OpenCode call in its own XDG_DATA_HOME and classify OpenCode's database lock errors as local, not model failures; brief in scratchpad brief-oc-isolate.md.
