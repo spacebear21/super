@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T05:40:00Z",
+  "updated": "2026-11-07T05:41:00Z",
   "items": [
     {
       "id": "untrusted-inputs",
@@ -24,17 +24,6 @@
       "owner": "super",
       "since": "2026-11-07T05:15Z",
       "next": "First scheduled run 2026-11-07 04:45 UTC: 64 pass, 37 fail, 53 unsupported, no infra errors, 24 min alongside the audit; page at reports/interop/index.html"
-    },
-    {
-      "id": "pr-review-stage",
-      "project": "payjoin-audit",
-      "title": "Pre-merge PR review stage",
-      "status": "done",
-      "priority": 2,
-      "owner": "super",
-      "since": "2026-11-06",
-      "next": "First nightly run at 02:17 UTC with cap 5; read reports/drafts/pr/ in the morning",
-      "worker": "merged to master"
     },
     {
       "id": "audit-nightly",
@@ -82,16 +71,6 @@
       "needs": ""
     },
     {
-      "id": "native-ffi-2023",
-      "project": "rust-payjoin",
-      "title": "Native FFI builds PR 2023",
-      "status": "done",
-      "priority": 3,
-      "owner": "upstream",
-      "since": "2026-11-06",
-      "next": "Merged upstream 2026-11-06 20:29 UTC"
-    },
-    {
       "id": "receiver-fee-class",
       "project": "payjoin-audit",
       "title": "New class: receiver bounds the fee rate it accepts",
@@ -102,16 +81,6 @@
       "next": "Decide whether to add the class",
       "needs": "Say yes to a receiver fee class (area fees, implementation and integration levels) so the Cake fee cap regression is checked by the stage",
       "detail": "tasks/receiver-fee-class.md"
-    },
-    {
-      "id": "dashboard-board",
-      "project": "harness",
-      "title": "Priorities board on the phone dashboard",
-      "status": "done",
-      "priority": 2,
-      "owner": "super",
-      "since": "2026-11-06",
-      "next": "Live on the box through the hub; the laptop deploy carries it to a rebuilt image"
     },
     {
       "id": "memory-dreaming",
